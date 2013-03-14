@@ -1,0 +1,1 @@
+In diesem Verzeichnis sind die erzeugten Importdaten abzulegen.

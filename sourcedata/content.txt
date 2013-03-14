@@ -1,0 +1,5 @@
+In diesem Verzeichnis sind die Ausgangsdaten abzulegen.
+
+Ursprung Destatis:
+asdf.xls	// Gemeindedaten 1990-2000
+asdf.xls	// Gemeindedaten 2001-2011
