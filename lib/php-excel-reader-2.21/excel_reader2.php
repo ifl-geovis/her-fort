@@ -914,7 +914,12 @@ class Spreadsheet_Excel_Reader {
 	 * Some basic initialisation
 	 */
 	function Spreadsheet_Excel_Reader($file='',$store_extended_info=true,$outputEncoding='') {
-		$this->_ole =& new OLERead();
+		
+		// PATCHED BY SKS
+		// http://code.google.com/p/php-excel-reader/issues/detail?id=82
+		//$this->_ole =& new OLERead();
+		$t = new OLERead();
+		$this->_ole =& $t;
 		$this->setUTFEncoder('mb');
 		if ($outputEncoding != '') { 
 			$this->setOutputEncoding($outputEncoding);
