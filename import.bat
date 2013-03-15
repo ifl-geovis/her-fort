@@ -7,5 +7,5 @@ echo ===================================
 echo === Datenimport.
 echo === Neo4j darf nicht laufen.
 echo ===================================
-
+chcp 65001
 java -Xmx1G -jar lib/batch-import-jar-with-dependencies.jar %NEO4j%/data/graph.db importdata/nodes.csv importdata/rels.csv
