@@ -49,7 +49,7 @@ $relations = array();
 $nodeProps = array("ags:string",	"name:string");
 // Verpflichtende Relationenspalten
 //					0		1		2		3			4				5
-$relProps = array("start",	"end",	"type",	"wert",	"teil:float",	"t:int");
+$relProps = array("start",	"end",	"type",	"wert:float",	"teil:float",	"t:int");
 
 $relTypeAdmin = "TEIL";
 $relTypeFl = "FL";
