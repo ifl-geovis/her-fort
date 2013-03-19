@@ -1,0 +1,43 @@
+Start bevNode=node(4)
+match ()-[bev:BEV]->(bevNode)
+return bev.t,sum(bev.wert)
+
+	Returned 20 rows.
+	Query took  10227ms			Warmer Cache: 5850ms
+	bev.t	sum(bev.wert)
+	19961231	82012128
+	19911231	80275784
+	...
+	
+Start bevNode=node(4)
+match ()-[bev:BEV]->(bevNode)
+where bev.t=19901231
+return bev.t,sum(bev.wert)
+
+	Returned 1 row.
+	Query took  1027ms
+	bev.t	sum(bev.wert)
+	19901231	79774992				79774647 (LibreOffice Summe)
+
+// Bevölkerung 1990 aggregiert nach Ländern
+	
+Start bevNode=node(4)
+match (land)-[k:TEIL]->()-[g:TEIL]->()-[bev:BEV]->(bevNode)
+where bev.t=19901231 and k.t=19901231 and g.t=19901231
+return distinct land.ags,sum(bev.wert)
+
+	Returned 16 rows.
+	Query took  6169ms
+	land.ags	sum(bev.wert)
+	"12"	2578312
+	"15"	2875190
+	...
+
+// Bevölkerungsverlauf einer beliebigen Gemeinde
+
+Start g=node(18), bevNode=node(4)
+match (g)-[bev:BEV]->(bevNode)
+where bev.t>19900000 AND bev.t<20000000
+return g.ags,bev.t,bev.wert ORDER BY bev.t
+
+	
