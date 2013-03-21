@@ -1,3 +1,5 @@
 /sourcedata/*.xls
+/sourcedata/*.zip
 /importdata/*.csv
 /batch.properties
+/sourcedata/*.csv
