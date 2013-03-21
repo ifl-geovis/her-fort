@@ -1,5 +1,12 @@
 In diesem Verzeichnis sind die Ausgangsdaten abzulegen.
 
 Ursprung Destatis:
-asdf.xls	// Gemeindedaten 1990-2000
-asdf.xls	// Gemeindedaten 2001-2011
+Gem_1990-2000.xls	// Gemeindedaten 1990-2000
+Gem_2000-2011.xls	// Gemeindedaten 2001-2011
+
+Wanderungsdaten Herfert:
+1.) Alle DBF-Dateien aller Länder entpacken.
+2.) Kommandozeile dbf_konvertieren.bat aufrufen. Konvertiert alle *.dbf Dateien in *.dbf.csv Dateien.
+3.) *.dbf Dateien können gelöscht werden.
+
+TODO: Überprüfen, ob alle Dateien fehlerfrei konvertiert werden.
