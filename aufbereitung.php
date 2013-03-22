@@ -56,11 +56,6 @@ $relTypeFl = "FL";
 $relTypeBev = "BEV";
 
 
-
-
-
-
-
 // Test, ob Datenbank leer ist
 $query = new Cypher\Query($neoClient, "START n=node(*) RETURN max(ID(n)) AS maxNodeId");
 $result = $query->getResultSet();
@@ -72,6 +67,9 @@ if ($maxNodeID>0) {
 	echo "Datenbank ist leer. Ist OK.";
 }
 
+// =========================================================
+// Gemeindedaten
+// =========================================================
 
 // Hauptschleife durch XLS-Dateien
 foreach($dateiformate as $fileName=>$sheets) {
@@ -217,6 +215,10 @@ foreach($dateiformate as $fileName=>$sheets) {
 	unset( $xlsReader );
 }
 
+// Auch wenn wir im gleichen Rutsch noch die Wanderungen importieren wollen
+// werden wir erst Mal die Gemeinden rausschreiben um wieder Arbeitsspeicher
+// frei zu haben.
+
 // Öffne Ausgabedatei
 $nodeFile = fopen($outputFolder.'nodes.csv','w');
 fwrite( $nodeFile, implode("\t", $nodeProps));
@@ -236,5 +238,48 @@ foreach( $relations as $rel) {
 // Schließe Ausgabedatei
 fclose($relFile);
 
+// Arbeitsspeicher aufräumen
+unset($nodes);
+unset($relations);
 
+
+
+// =========================================================
+// Wanderungsdaten
+// =========================================================
+
+echo "\nVerarbeite Wanderungsdaten.\n";
+
+ini_set('auto_detect_line_endings',TRUE);
+
+$relations = array();
+
+$csvDateien = glob($sourceFolder."*.DBF.csv");
+foreach ($csvDateien as $dateiname) {
+	echo "\n  Lese ".$dateiname
+	$csvFile = fopen( $dateiname,'r');
+	
+	$header = fgetcsv( $csvFile );
+	// Liest Zeile für Zeile aus der Datei aus
+	while (($line = fgetcsv($csvFile)) !== FALSE) {
+		//echo (count($line)." ".$line[0]." - ".$line[1]."\n");
+		
+		
+		// Knoten-ID für AGS aus $spaceIDs suchen
+		
+		// Prüfen, ob für die AGS auch für dieses Jahr existiert?
+		
+		// Wanderungsdaten als Relationen speichern
+		//$relations[] = array($start, $end, $type, null, null, 0);
+	}
+	fclose($csvFile);
+}
+
+// Öffne Relations-Ausgabedatei erneut, jetzt aber zum anhängen
+$relFile = fopen($outputFolder.'rels.csv','a');
+foreach( $relations as $rel) {
+	fwrite( $relFile, "\n".implode("\t", $rel));
+}
+// Schließe Ausgabedatei
+fclose($relFile);
 ?>

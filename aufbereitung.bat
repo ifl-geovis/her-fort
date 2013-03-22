@@ -11,3 +11,5 @@ echo === Neo4j muss laufen.
 echo ===================================
 
 php.exe -d memory_limit=800M -f aufbereitung.php
+
+PAUSE
