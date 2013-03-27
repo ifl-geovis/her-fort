@@ -256,14 +256,14 @@ $relations = array();
 
 $csvDateien = glob($sourceFolder."*.DBF.csv");
 foreach ($csvDateien as $dateiname) {
-	echo "\n  Lese ".$dateiname
+	echo "\n  Lese ".$dateiname;
 	$csvFile = fopen( $dateiname,'r');
 	
 	$header = fgetcsv( $csvFile );
 	// Liest Zeile für Zeile aus der Datei aus
 	while (($line = fgetcsv($csvFile)) !== FALSE) {
 		//echo (count($line)." ".$line[0]." - ".$line[1]."\n");
-		
+		echo (count($line)." ".$line[0]."\n");
 		
 		// Knoten-ID für AGS aus $spaceIDs suchen
 		
