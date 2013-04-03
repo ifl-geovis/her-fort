@@ -263,8 +263,19 @@ foreach ($csvDateien as $dateiname) {
 	// Liest Zeile für Zeile aus der Datei aus
 	while (($line = fgetcsv($csvFile)) !== FALSE) {
 		//echo (count($line)." ".$line[0]." - ".$line[1]."\n");
-		echo (count($line)." ".$line[0]."\n");
-		
+		$line[0] = $line[0].'1231';
+		if (substr($line[3],0,1) == '0') {
+			$line[3] = substr($line[3],1,8);
+		}else{
+			$line[3] = substr($line[3],0,3);
+		}	
+		if (substr($line[1],0,1) == '0') {
+			$line[1] = substr($line[1],1,8);
+		}else{
+			$line[1] = substr($line[1],0,3);
+		}	
+		echo (count($line)." - ".$line[0]." -  ".$line[1]." - ".$line[3]."\n");
+
 		// Knoten-ID für AGS aus $spaceIDs suchen
 		
 		// Prüfen, ob für die AGS auch für dieses Jahr existiert?
