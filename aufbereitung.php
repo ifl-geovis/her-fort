@@ -14,6 +14,8 @@ require_once( './sourcedata/formate.php');
 require("phar://lib/neo4jphp.phar");
 //require_once('./lib/XLS.php');
 
+/*
+// Zur Zeit deaktiviert
 use Everyman\Neo4j\Client,
 	Everyman\Neo4j\Index\NodeIndex,
 	Everyman\Neo4j\Relationship,
@@ -23,6 +25,7 @@ use Everyman\Neo4j\Client,
 
 // INIT Neo4j Client
 $neoClient = new Client();
+*/
 
 // INIT Excel-Reader
 mb_internal_encoding("UTF-8");
@@ -45,8 +48,8 @@ $nodes = array();
 $relations = array();
 
 // Verpflichtende Knotenspalten
-//					0				1
-$nodeProps = array("ags:string",	"name:string");
+//					0				1					2
+$nodeProps = array("ags:string",	"klasse:String",	"name:string");
 // Verpflichtende Relationenspalten
 //					0		1		2		3			4				5
 $relProps = array("start",	"end",	"type",	"wert:float",	"teil:float",	"t:int");
@@ -57,14 +60,16 @@ $relTypeBev = "BEV";
 
 
 // Test, ob Datenbank leer ist
-$query = new Cypher\Query($neoClient, "START n=node(*) RETURN max(ID(n)) AS maxNodeId");
-$result = $query->getResultSet();
-$maxNodeID = $result[0]["maxNodeId"];
-if ($maxNodeID>0) {
-	// Abbruch des Skripts
-	die("Die Datenbank ist nicht leer! Ist im Moment nicht OK.");
-} else {
-	echo "Datenbank ist leer. Ist OK.";
+if (isset($neoClient)) {
+	$query = new Cypher\Query($neoClient, "START n=node(*) RETURN max(ID(n)) AS maxNodeId");
+	$result = $query->getResultSet();
+	$maxNodeID = $result[0]["maxNodeId"];
+	if ($maxNodeID>0) {
+		// Abbruch des Skripts
+		die("Die Datenbank ist nicht leer! Ist im Moment nicht OK.");
+	} else {
+		echo "Datenbank ist leer. Ist OK.";
+	}
 }
 
 // =========================================================
@@ -160,18 +165,19 @@ foreach($dateiformate as $fileName=>$sheets) {
 			
 			break; // B ================================================================
 			case "NODES":
-				// col	0		1			2
-				//		id		ags:string	name:string
+				// col	0		1			2				3
+				//		id		ags:string	klasse:string	name:string
 
 				$col = 0;
 				$row = 2;
 				$val = $sheet->getCellByColumnAndRow(0, $row)->getValue();
 				while (!empty($val)){
 					$ags=$sheet->getCellByColumnAndRow(1, $row)->getValue();
-					$name=$sheet->getCellByColumnAndRow(2, $row)->getValue();
+					$klasse=$sheet->getCellByColumnAndRow(2, $row)->getValue();
+					$name=$sheet->getCellByColumnAndRow(3, $row)->getValue();
 					
 					$nodeID++;
-					$nodes[] = array($ags, $name);
+					$nodes[] = array($ags, $klasse, $name);
 					
 					// Bestimmte Node-IDs zur späteren Verwendung speichern
 					if ($name=="Fläche") {
