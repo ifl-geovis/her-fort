@@ -5,3 +5,4 @@
 /batch.properties
 /sourcedata/*.csv
 /sourcedata/*.dbf
+/sourcedata/wander/

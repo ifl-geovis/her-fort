@@ -1,0 +1,15 @@
+
+//die Bundesländer
+START land=node(6)
+MATCH land-[:TEIL]->bl
+//WHERE bl.ags =~ '1.*'
+RETURN bl.ags
+ORDER BY bl.ags
+
+
+//BL und Anzahl der Kreise
+START land=node(6)
+MATCH land-[:TEIL]->bl -[:TEIL]->kreis
+//WHERE bl.ags =~ '1.*'
+RETURN bl.ags, count(kreis)
+ORDER BY bl.ags
