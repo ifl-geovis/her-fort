@@ -10,6 +10,6 @@ echo === Ausgangsdatentest.
 echo === Lass uns schauen, wo es Fehler gibt...
 echo ===================================
 
-php.exe -d memory_limit=800M -f datentest.php
+php.exe -d memory_limit=800M -f datentest.php >datentest.txt
 
 PAUSE
