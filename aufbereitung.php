@@ -52,7 +52,7 @@ $relations = array();
 $nodeProps = array("ags:string",	"klasse:String",	"name:string");
 // Verpflichtende Relationenspalten
 //					0		1		2		3			4				5
-$relProps = array("start",	"end",	"type",	"wert:float",	"teil:float",	"t:int");
+$relProps = array("start",	"end",	"type",	"wert:float",	"teil:float",	"d:int");
 
 $relTypeAdmin = "TEIL";
 $relTypeFl = "FL";
@@ -193,7 +193,7 @@ foreach($dateiformate as $fileName=>$sheets) {
 			break; // NODES ============================================================
 			case "RELS":
 				// col	0		1		2		3
-				// 		start	end		type	t:int
+				// 		start	end		type	d:int
 
 				$col = 0;
 				$row = 2;
