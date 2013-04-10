@@ -1,0 +1,516 @@
+
+Ueberpruefe Wanderungsdaten.
+
+ 
+ Lese sourcedata/wander/A2000.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/A2000.DBF.csv
+
+   Zeile:2 hat falschen AGS-Wert
+   Zeile:2 hat falschen AGS-2-Wert
+   Zeile:2 hat falschen Wert in Feld Geschlecht
+   Zeile:2 hat falschen Wert in Feld Anzahl
+ 
+ Lese sourcedata/wander/A2001.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/A2001.DBF.csv
+
+   Zeile:2 hat falschen AGS-Wert
+   Zeile:2 hat falschen AGS-2-Wert
+   Zeile:2 hat falschen Wert in Feld Geschlecht
+   Zeile:2 hat falschen Wert in Feld Anzahl
+ 
+ Lese sourcedata/wander/A2002.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/A2002.DBF.csv
+
+   Zeile:2 hat falschen AGS-Wert
+   Zeile:2 hat falschen AGS-2-Wert
+   Zeile:2 hat falschen Wert in Feld Geschlecht
+   Zeile:2 hat falschen Wert in Feld Anzahl
+ 
+ Lese sourcedata/wander/A2003.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/A2003.DBF.csv
+
+   Zeile:2 hat falschen AGS-Wert
+   Zeile:2 hat falschen AGS-2-Wert
+   Zeile:2 hat falschen Wert in Feld Geschlecht
+   Zeile:2 hat falschen Wert in Feld Anzahl
+ 
+ Lese sourcedata/wander/A2004.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/A2004.DBF.csv
+
+   Zeile:2 hat falschen AGS-Wert
+   Zeile:2 hat falschen AGS-2-Wert
+   Zeile:2 hat falschen Wert in Feld Geschlecht
+   Zeile:2 hat falschen Wert in Feld Anzahl
+   Zeile:3 hat falschen AGS-2-Wert
+   Zeile:4 hat falschen AGS-2-Wert
+   Zeile:4466 hat falschen AGS-2-Wert
+   Zeile:5526 hat falschen AGS-2-Wert
+   Zeile:7774 hat falschen AGS-2-Wert
+   Zeile:7775 hat falschen AGS-2-Wert
+   Zeile:11827 hat falschen AGS-2-Wert
+   Zeile:14330 hat falschen AGS-2-Wert
+   Zeile:14331 hat falschen AGS-2-Wert
+   Zeile:14332 hat falschen AGS-2-Wert
+   Zeile:14333 hat falschen AGS-2-Wert
+   Zeile:15869 hat falschen AGS-2-Wert
+   Zeile:18907 hat falschen AGS-2-Wert
+   Zeile:18908 hat falschen AGS-2-Wert
+   Zeile:18909 hat falschen AGS-2-Wert
+   Zeile:18910 hat falschen AGS-2-Wert
+   Zeile:18911 hat falschen AGS-2-Wert
+   Zeile:18912 hat falschen AGS-2-Wert
+   Zeile:18913 hat falschen AGS-2-Wert
+   Zeile:18914 hat falschen AGS-2-Wert
+   Zeile:18915 hat falschen AGS-2-Wert
+   Zeile:18916 hat falschen AGS-2-Wert
+   Zeile:28156 hat falschen AGS-2-Wert
+   Zeile:28157 hat falschen AGS-2-Wert
+   Zeile:28481 hat falschen AGS-2-Wert
+   Zeile:31190 hat falschen AGS-2-Wert
+   Zeile:31191 hat falschen AGS-2-Wert
+   Zeile:33119 hat falschen AGS-2-Wert
+   Zeile:36326 hat falschen AGS-2-Wert
+   Zeile:40199 hat falschen AGS-2-Wert
+   Zeile:42277 hat falschen AGS-2-Wert
+   Zeile:45639 hat falschen AGS-2-Wert
+   Zeile:45640 hat falschen AGS-2-Wert
+   Zeile:45641 hat falschen AGS-2-Wert
+   Zeile:49994 hat falschen AGS-2-Wert
+   Zeile:52054 hat falschen AGS-2-Wert
+   Zeile:53471 hat falschen AGS-2-Wert
+   Zeile:53472 hat falschen AGS-2-Wert
+   Zeile:53473 hat falschen AGS-2-Wert
+   Zeile:53474 hat falschen AGS-2-Wert
+   Zeile:61118 hat falschen AGS-2-Wert
+   Zeile:61119 hat falschen AGS-2-Wert
+   Zeile:61120 hat falschen AGS-2-Wert
+   Zeile:61121 hat falschen AGS-2-Wert
+   Zeile:61122 hat falschen AGS-2-Wert
+   Zeile:64257 hat falschen AGS-2-Wert
+   Zeile:72622 hat falschen AGS-2-Wert
+   Zeile:72623 hat falschen AGS-2-Wert
+   Zeile:72624 hat falschen AGS-2-Wert
+   Zeile:72625 hat falschen AGS-2-Wert
+   Zeile:72626 hat falschen AGS-2-Wert
+   Zeile:81293 hat falschen AGS-2-Wert
+   Zeile:83242 hat falschen AGS-2-Wert
+   Zeile:83243 hat falschen AGS-2-Wert
+   Zeile:83244 hat falschen AGS-2-Wert
+   Zeile:83245 hat falschen AGS-2-Wert
+   Zeile:83468 hat falschen AGS-2-Wert
+   Zeile:83469 hat falschen AGS-2-Wert
+   Zeile:83470 hat falschen AGS-2-Wert
+   Zeile:91558 hat falschen AGS-2-Wert
+   Zeile:91559 hat falschen AGS-2-Wert
+   Zeile:91560 hat falschen AGS-2-Wert
+   Zeile:95683 hat falschen AGS-2-Wert
+   Zeile:97032 hat falschen AGS-2-Wert
+   Zeile:97033 hat falschen AGS-2-Wert
+   Zeile:100290 hat falschen AGS-2-Wert
+   Zeile:104815 hat falschen AGS-2-Wert
+   Zeile:104816 hat falschen AGS-2-Wert
+   Zeile:113180 hat falschen AGS-2-Wert
+   Zeile:113181 hat falschen AGS-2-Wert
+   Zeile:113182 hat falschen AGS-2-Wert
+   Zeile:115807 hat falschen AGS-2-Wert
+   Zeile:119238 hat falschen AGS-2-Wert
+   Zeile:123539 hat falschen AGS-2-Wert
+   Zeile:123540 hat falschen AGS-2-Wert
+   Zeile:123541 hat falschen AGS-2-Wert
+   Zeile:123542 hat falschen AGS-2-Wert
+   Zeile:123543 hat falschen AGS-2-Wert
+   Zeile:135308 hat falschen AGS-2-Wert
+   Zeile:135309 hat falschen AGS-2-Wert
+   Zeile:135310 hat falschen AGS-2-Wert
+   Zeile:141435 hat falschen AGS-2-Wert
+   Zeile:142086 hat falschen AGS-2-Wert
+   Zeile:146258 hat falschen AGS-2-Wert
+   Zeile:149738 hat falschen AGS-2-Wert
+   Zeile:151987 hat falschen AGS-2-Wert
+   Zeile:151988 hat falschen AGS-2-Wert
+   Zeile:151989 hat falschen AGS-2-Wert
+   Zeile:153758 hat falschen AGS-2-Wert
+   Zeile:157236 hat falschen AGS-2-Wert
+   Zeile:160553 hat falschen AGS-2-Wert
+   Zeile:160554 hat falschen AGS-2-Wert
+   Zeile:162175 hat falschen AGS-2-Wert
+   Zeile:162176 hat falschen AGS-2-Wert
+   Zeile:170006 hat falschen AGS-2-Wert
+   Zeile:170007 hat falschen AGS-2-Wert
+   Zeile:172415 hat falschen AGS-2-Wert
+   Zeile:172416 hat falschen AGS-2-Wert
+   Zeile:172417 hat falschen AGS-2-Wert
+   Zeile:174148 hat falschen AGS-2-Wert
+   Zeile:174149 hat falschen AGS-2-Wert
+   Zeile:174150 hat falschen AGS-2-Wert
+   Zeile:174151 hat falschen AGS-2-Wert
+   Zeile:177833 hat falschen AGS-2-Wert
+   Zeile:186136 hat falschen AGS-2-Wert
+   Zeile:194306 hat falschen AGS-2-Wert
+   Zeile:195762 hat falschen AGS-2-Wert
+   Zeile:195763 hat falschen AGS-2-Wert
+   Zeile:199111 hat falschen AGS-2-Wert
+   Zeile:205736 hat falschen AGS-2-Wert
+   Zeile:210462 hat falschen AGS-2-Wert
+   Zeile:210800 hat falschen AGS-2-Wert
+   Zeile:211102 hat falschen AGS-2-Wert
+   Zeile:211103 hat falschen AGS-2-Wert
+   Zeile:211104 hat falschen AGS-2-Wert
+   Zeile:211833 hat falschen AGS-2-Wert
+   Zeile:211834 hat falschen AGS-2-Wert
+   Zeile:212586 hat falschen AGS-2-Wert
+ 
+ Lese sourcedata/wander/A2005.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/A2005.DBF.csv
+
+   Zeile:11976 hat falschen AGS-2-Wert
+   Zeile:17571 hat falschen AGS-2-Wert
+   Zeile:47182 hat falschen AGS-2-Wert
+   Zeile:47183 hat falschen AGS-2-Wert
+   Zeile:58222 hat falschen AGS-2-Wert
+   Zeile:58223 hat falschen AGS-2-Wert
+   Zeile:76456 hat falschen AGS-2-Wert
+   Zeile:76457 hat falschen AGS-2-Wert
+   Zeile:77717 hat falschen AGS-2-Wert
+   Zeile:88980 hat falschen AGS-2-Wert
+   Zeile:88981 hat falschen AGS-2-Wert
+   Zeile:104515 hat falschen AGS-2-Wert
+   Zeile:116905 hat falschen AGS-2-Wert
+   Zeile:130109 hat falschen AGS-2-Wert
+   Zeile:130110 hat falschen AGS-2-Wert
+   Zeile:188736 hat falschen AGS-2-Wert
+ 
+ Lese sourcedata/wander/A2006.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/A2006.DBF.csv
+JAHR,N,4,0 | ART,N,8,0 | SCHL,C,9 | SCHL1,C,9 | NAT,C,11 | GESCHL,N,10,0 | AG,N,11,0 | FAM,N,12,0 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/A2007.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/A2007.DBF.csv
+JAHR,N,4,0 | ART,N,8,0 | SCHL,C,9 | SCHL1,C,9 | NAT,C,11 | GESCHL,N,10,0 | AG,N,11,0 | FAM,N,12,0 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/A2008.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/A2008.DBF.csv
+JAHR,N,4,0 | ART,N,8,0 | SCHL,C,9 | SCHL1,C,9 | NAT,C,11 | GESCHL,N,10,0 | AG,N,11,0 | FAM,N,12,0 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/A2009.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/A2009.DBF.csv
+JAHR,N,4,0 | ART,N,1,0 | SCHL,C,9 | SCHL1,C,9 | NAT,C,1 | GESCHL,N,1,0 | AG,N,1,0 | FAM,N,1,0 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/A2010.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/A2010.DBF.csv
+JAHR,N,4,0 | ART,N,8,0 | SCHL,C,9 | SCHL1,C,9 | NAT,C,11 | GESCHL,N,10,0 | AG,N,11,0 | FAM,N,12,0 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/A2011.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/A2011.DBF.csv
+JAHR,N,4,0 | ART,N,8,0 | SCHL,C,9 | SCHL1,C,9 | NAT,C,11 | GESCHL,N,10,0 | AG,N,11,0 | FAM,N,12,0 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/B2006.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/B2006.DBF.csv
+
+   Zeile:12037 hat falsche Datumsangabe
+   Zeile:12037 hat falschen AGS-Wert
+   Zeile:12037 hat falschen AGS-2-Wert
+   Zeile:12037 hat falschen Wert in Feld Geschlecht
+   Zeile:12037 hat falschen Wert in Feld Altersgruppe
+   Zeile:12037 hat falschen Nation-Wert
+   Zeile:25473 hat falsche Datumsangabe
+   Zeile:25473 hat falschen AGS-Wert
+   Zeile:25473 hat falschen AGS-2-Wert
+   Zeile:25473 hat falschen Wert in Feld Geschlecht
+   Zeile:25473 hat falschen Wert in Feld Altersgruppe
+   Zeile:25473 hat falschen Nation-Wert
+   Zeile:61085 hat falsche Datumsangabe
+   Zeile:61085 hat falschen AGS-Wert
+   Zeile:61085 hat falschen AGS-2-Wert
+   Zeile:61085 hat falschen Wert in Feld Geschlecht
+   Zeile:61085 hat falschen Wert in Feld Altersgruppe
+   Zeile:61085 hat falschen Nation-Wert
+   Zeile:95179 hat falsche Datumsangabe
+   Zeile:95179 hat falschen AGS-Wert
+   Zeile:95179 hat falschen AGS-2-Wert
+   Zeile:95179 hat falschen Wert in Feld Geschlecht
+   Zeile:95179 hat falschen Wert in Feld Altersgruppe
+   Zeile:95179 hat falschen Nation-Wert
+   Zeile:119646 hat falsche Datumsangabe
+   Zeile:119646 hat falschen AGS-Wert
+   Zeile:119646 hat falschen AGS-2-Wert
+   Zeile:119646 hat falschen Wert in Feld Geschlecht
+   Zeile:119646 hat falschen Wert in Feld Altersgruppe
+   Zeile:119646 hat falschen Nation-Wert
+   Zeile:140319 hat falsche Datumsangabe
+   Zeile:140319 hat falschen AGS-Wert
+   Zeile:140319 hat falschen AGS-2-Wert
+   Zeile:140319 hat falschen Wert in Feld Geschlecht
+   Zeile:140319 hat falschen Wert in Feld Altersgruppe
+   Zeile:140319 hat falschen Nation-Wert
+   Zeile:151918 hat falsche Datumsangabe
+   Zeile:151918 hat falschen AGS-Wert
+   Zeile:151918 hat falschen AGS-2-Wert
+   Zeile:151918 hat falschen Wert in Feld Geschlecht
+   Zeile:151918 hat falschen Wert in Feld Altersgruppe
+   Zeile:151918 hat falschen Nation-Wert
+ 
+ Lese sourcedata/wander/B2007.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/B2007.DBF.csv
+
+ 
+ Lese sourcedata/wander/B2008.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/B2008.DBF.csv
+
+ 
+ Lese sourcedata/wander/B2009.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/B2009.DBF.csv
+JAHR,N,4,0 | SCHL,C,9 | ART,N,1,0 | SCHL1,C,9 | GESCHL,N,1,0 | AG,N,1,0 | FAM,N,1,0 | NAT,C,1 | ANZ,N,4,0
+ 
+ Lese sourcedata/wander/B2010.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/B2010.DBF.csv
+
+ 
+ Lese sourcedata/wander/B2011.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/B2011.DBF.csv
+
+ 
+ Lese sourcedata/wander/M2006.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/M2006.DBF.csv
+
+ 
+ Lese sourcedata/wander/M2007.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/M2007.DBF.csv
+
+ 
+ Lese sourcedata/wander/M2008.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/M2008.DBF.csv
+
+ 
+ Lese sourcedata/wander/M2009.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/M2009.DBF.csv
+
+ 
+ Lese sourcedata/wander/M2010.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/M2010.DBF.csv
+
+ 
+ Lese sourcedata/wander/S2000.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/S2000.DBF.csv
+
+ 
+ Lese sourcedata/wander/S2001.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/S2001.DBF.csv
+
+   Zeile:22938 hat falsche Datumsangabe
+   Zeile:61754 hat falsche Datumsangabe
+   Zeile:148980 hat falsche Datumsangabe
+   Zeile:216910 hat falsche Datumsangabe
+   Zeile:255726 hat falsche Datumsangabe
+   Zeile:284727 hat falsche Datumsangabe
+ 
+ Lese sourcedata/wander/S2002.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/S2002.DBF.csv
+
+ 
+ Lese sourcedata/wander/S2003.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/S2003.DBF.csv
+
+ 
+ Lese sourcedata/wander/S2004.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/S2004.DBF.csv
+
+ 
+ Lese sourcedata/wander/S2005.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/S2005.DBF.csv
+JAHR,N,4,0 | SCHL,C,9 | ART,N,8,0 | SCHL1,C,9 | GESCHL,N,10,0 | AG,N,10,0 | FAM,N,10,0 | NAT,C,1 | ANZ,N,5,0
+ 
+ Lese sourcedata/wander/S2006.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/S2006.DBF.csv
+JAHR,N,4,0 | SCHL,C,9 | ART,N,1,0 | SCHL1,C,9 | GESCHL,N,1,0 | AG,N,1,0 | FAM,N,1,0 | NAT,C,1 | ANZ,N,5,0
+ 
+ Lese sourcedata/wander/S2007.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/S2007.DBF.csv
+JAHR,N,4,0 | SCHL,C,9 | ART,N,1,0 | SCHL1,C,9 | GESCHL,N,1,0 | AG,N,1,0 | FAM,N,1,0 | NAT,C,1 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/S2008.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/S2008.DBF.csv
+JAHR,N,4,0 | SCHL,C,9 | ART,N,1,0 | SCHL1,C,9 | GESCHL,N,1,0 | AG,N,1,0 | FAM,N,1,0 | NAT,C,1 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/S2009.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/S2009.DBF.csv
+JAHR,N,4,0 | SCHL,C,9 | ART,N,1,0 | SCHL1,C,9 | GESCHL,N,1,0 | AG,N,1,0 | FAM,N,1,0 | NAT,C,1 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/S2010.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/S2010.DBF.csv
+JAHR,N,4,0 | SCHL,C,9 | ART,N,1,0 | SCHL1,C,9 | GESCHL,N,1,0 | AG,N,1,0 | FAM,N,1,0 | NAT,C,1 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/S2011.DBF.csv
+ ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: sourcedata/wander/S2011.DBF.csv
+JAHR,N,4,0 | SCHL,C,9 | ART,N,1,0 | SCHL1,C,9 | GESCHL,N,1,0 | AG,N,1,0 | FAM,N,1,0 | NAT,C,1 | ANZ,N,10,0
+ 
+ Lese sourcedata/wander/T2006.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/T2006.DBF.csv
+
+ 
+ Lese sourcedata/wander/T2007.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/T2007.DBF.csv
+
+ 
+ Lese sourcedata/wander/T2008.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/T2008.DBF.csv
+
+ 
+ Lese sourcedata/wander/T2009.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/T2009.DBF.csv
+
+ 
+ Lese sourcedata/wander/T2010.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/T2010.DBF.csv
+
+ 
+ Lese sourcedata/wander/T2011.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/T2011.DBF.csv
+
+ 
+ Lese sourcedata/wander/b2000.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/b2000.DBF.csv
+
+ 
+ Lese sourcedata/wander/b2001.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/b2001.DBF.csv
+
+ 
+ Lese sourcedata/wander/b2002.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/b2002.DBF.csv
+
+ 
+ Lese sourcedata/wander/b2003.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/b2003.DBF.csv
+
+ 
+ Lese sourcedata/wander/b2004.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/b2004.DBF.csv
+
+   Zeile:19814 hat falsche Datumsangabe
+   Zeile:19814 hat falschen Wert in Feld Geschlecht
+   Zeile:19814 hat falschen Wert in Feld Anzahl
+   Zeile:19814 hat falschen Wert in Feld Altersgruppe
+   Zeile:19815 hat falsche Datumsangabe
+   Zeile:19815 hat falschen AGS-Wert
+   Zeile:19815 hat falschen AGS-2-Wert
+   Zeile:19815 hat falschen Wert in Feld Geschlecht
+   Zeile:19815 hat falschen Wert in Feld Anzahl
+   Zeile:19815 hat falschen Wert in Feld Altersgruppe
+   Zeile:19815 hat falschen Nation-Wert
+   Zeile:35028 hat falschen Wert in Feld Anzahl
+   Zeile:35619 hat falschen Wert in Feld Anzahl
+   Zeile:43559 hat falschen Wert in Feld Anzahl
+   Zeile:44696 hat falsche Datumsangabe
+   Zeile:44696 hat falschen Wert in Feld Geschlecht
+   Zeile:44696 hat falschen Wert in Feld Anzahl
+   Zeile:44696 hat falschen Wert in Feld Altersgruppe
+   Zeile:44697 hat falsche Datumsangabe
+   Zeile:44697 hat falschen AGS-Wert
+   Zeile:44697 hat falschen AGS-2-Wert
+   Zeile:44697 hat falschen Wert in Feld Geschlecht
+   Zeile:44697 hat falschen Wert in Feld Anzahl
+   Zeile:44697 hat falschen Wert in Feld Altersgruppe
+   Zeile:44697 hat falschen Nation-Wert
+   Zeile:100601 hat falsche Datumsangabe
+   Zeile:100601 hat falschen Wert in Feld Geschlecht
+   Zeile:100601 hat falschen Wert in Feld Anzahl
+   Zeile:100601 hat falschen Wert in Feld Altersgruppe
+   Zeile:100602 hat falsche Datumsangabe
+   Zeile:100602 hat falschen AGS-Wert
+   Zeile:100602 hat falschen AGS-2-Wert
+   Zeile:100602 hat falschen Wert in Feld Geschlecht
+   Zeile:100602 hat falschen Wert in Feld Anzahl
+   Zeile:100602 hat falschen Wert in Feld Altersgruppe
+   Zeile:100602 hat falschen Nation-Wert
+   Zeile:152969 hat falsche Datumsangabe
+   Zeile:152969 hat falschen Wert in Feld Geschlecht
+   Zeile:152969 hat falschen Wert in Feld Anzahl
+   Zeile:152969 hat falschen Wert in Feld Altersgruppe
+   Zeile:152969 hat falschen Nation-Wert
+   Zeile:152970 hat falsche Datumsangabe
+   Zeile:152970 hat falschen AGS-Wert
+   Zeile:152970 hat falschen AGS-2-Wert
+   Zeile:152970 hat falschen Wert in Feld Geschlecht
+   Zeile:152970 hat falschen Wert in Feld Anzahl
+   Zeile:152970 hat falschen Wert in Feld Altersgruppe
+   Zeile:152970 hat falschen Nation-Wert
+   Zeile:191072 hat falsche Datumsangabe
+   Zeile:191072 hat falschen Wert in Feld Geschlecht
+   Zeile:191072 hat falschen Wert in Feld Anzahl
+   Zeile:191072 hat falschen Wert in Feld Altersgruppe
+   Zeile:191073 hat falsche Datumsangabe
+   Zeile:191073 hat falschen AGS-Wert
+   Zeile:191073 hat falschen AGS-2-Wert
+   Zeile:191073 hat falschen Wert in Feld Geschlecht
+   Zeile:191073 hat falschen Wert in Feld Anzahl
+   Zeile:191073 hat falschen Wert in Feld Altersgruppe
+   Zeile:191073 hat falschen Nation-Wert
+   Zeile:222354 hat falsche Datumsangabe
+   Zeile:222354 hat falschen Wert in Feld Geschlecht
+   Zeile:222354 hat falschen Wert in Feld Anzahl
+   Zeile:222354 hat falschen Wert in Feld Altersgruppe
+   Zeile:222355 hat falsche Datumsangabe
+   Zeile:222355 hat falschen AGS-Wert
+   Zeile:222355 hat falschen AGS-2-Wert
+   Zeile:222355 hat falschen Wert in Feld Geschlecht
+   Zeile:222355 hat falschen Wert in Feld Anzahl
+   Zeile:222355 hat falschen Wert in Feld Altersgruppe
+   Zeile:222355 hat falschen Nation-Wert
+ 
+ Lese sourcedata/wander/b2005.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/b2005.DBF.csv
+
+ 
+ Lese sourcedata/wander/m2000.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/m2000.DBF.csv
+
+ 
+ Lese sourcedata/wander/m2001.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/m2001.DBF.csv
+
+ 
+ Lese sourcedata/wander/m2002.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/m2002.DBF.csv
+
+ 
+ Lese sourcedata/wander/m2003.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/m2003.DBF.csv
+
+ 
+ Lese sourcedata/wander/m2004.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/m2004.DBF.csv
+
+ 
+ Lese sourcedata/wander/m2005.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/m2005.DBF.csv
+
+ 
+ Lese sourcedata/wander/t2000.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/t2000.DBF.csv
+
+ 
+ Lese sourcedata/wander/t2001.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/t2001.DBF.csv
+
+   Zeile:15919 hat falschen AGS-2-Wert
+   Zeile:30892 hat falsche Datumsangabe
+   Zeile:60835 hat falschen Wert in Feld Altersgruppe
+   Zeile:113239 hat falsche Datumsangabe
+   Zeile:143182 hat falschen Wert in Feld Altersgruppe
+   Zeile:188099 hat falschen Wert in Feld Altersgruppe
+ 
+ Lese sourcedata/wander/t2002.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/t2002.DBF.csv
+
+ 
+ Lese sourcedata/wander/t2003.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/t2003.DBF.csv
+
+ 
+ Lese sourcedata/wander/t2004.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/t2004.DBF.csv
+
+ 
+ Lese sourcedata/wander/t2005.DBF.csv
+ Hier sind die Spalten korrekt angeordnet: sourcedata/wander/t2005.DBF.csv

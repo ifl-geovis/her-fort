@@ -32,11 +32,13 @@ foreach ($csvDateien as $dateiname) {
     }
 	if (((substr( $header[0], 0, 4 )) === "JAHR") && ((substr( $header[1], 0, 4 )) === "SCHL") && ((substr( $header[2], 0, 3 )) === "ART") && ((substr( $header[3], 0, 5 )) === "SCHL1") && ((substr( $header[4], 0, 6 )) === "GESCHL") && ((substr( $header[5], 0, 3 )) === "ANZ") && ((substr( $header[6], 0, 2 )) === "AG") && ((substr( $header[7], 0, 3 )) === "FAM") && ((substr( $header[8], 0, 3 )) === "NAT")){
 		echo " Hier sind die Spalten korrekt angeordnet: ".$dateiname."\n";
+	}else{
+		echo " ACHTUNG andere Spaltenanordnung! Datei wird vorerst ignoriert: ".$dateiname."\n";
+		echo $header[0]." | ".$header[1]." | ".$header[2]." | ".$header[3]." | ".$header[4]." | ".$header[5]." | ".$header[6]." | ".$header[7]." | ".$header[8];
 	}
 		$linecount = 1;
 		// Liest Zeile für Zeile aus der Datei aus
-		//while (( bedingung1 ) && (bedigung2) ) {
-		//substr( $string_n, 0, 4 ) === "http"
+
 	while ((($line = fgetcsv($csvFile)) !== FALSE) && ((substr( $header[0], 0, 4 )) === "JAHR") && ((substr( $header[1], 0, 4 )) === "SCHL") && ((substr( $header[2], 0, 3 )) === "ART") && ((substr( $header[3], 0, 5 )) === "SCHL1") && ((substr( $header[4], 0, 6 )) === "GESCHL") && ((substr( $header[5], 0, 3 )) === "ANZ") && ((substr( $header[6], 0, 2 )) === "AG") && ((substr( $header[7], 0, 3 )) === "FAM") && ((substr( $header[8], 0, 3 )) === "NAT")){
 	 
 		$linecount++;
@@ -69,6 +71,7 @@ foreach ($csvDateien as $dateiname) {
 		}
 	
 	}
+	
 	fclose($csvFile);
 	
 	
