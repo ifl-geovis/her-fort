@@ -49,7 +49,7 @@ $relations = array();
 
 // Verpflichtende Knotenspalten
 //					0				1					2
-$nodeProps = array("ags:string",	"klasse:String",	"name:string");
+$nodeProps = array("ags:string",	"klasse:string",	"name:string");
 // Verpflichtende Relationenspalten
 //					0		1		2		3			4				5
 $relProps = array("start",	"end",	"type",	"wert:float",	"teil:float",	"d:int");
@@ -96,6 +96,7 @@ foreach($dateiformate as $fileName=>$sheets) {
 		
 		switch ($sheetInfo[1]) {
 			case "A": 
+				// GEMEINDEDATEN BIS 2009
 				// col	0		1			2			3			4			5
 				//		AGS		Gemeinde	Fläche km2	Bevölkerung		
 				//										insgesamt	männlich	weiblich
@@ -108,27 +109,17 @@ foreach($dateiformate as $fileName=>$sheets) {
 					$land = substr($val,0,2);
 					$landNodeID = @$spaceIDs[$land];
 					if (!$landNodeID) {
-						// Land existiert noch nicht und muss angelegt werden
-						$nodeID++;
-						$nodes[] = array($land, $land);
-						$landNodeID = $spaceIDs[$land] = $nodeID;
-						
-						// Relation zu DE anlegen
-						$relations[] = array($spaceIDs['DE'], $landNodeID, $relTypeAdmin, null, null, $sheetInfo[0]);
+						// Kreis existiert noch nicht und muss angelegt werden
+						echo "\nFEHLER: Land $land existiert nicht.";
 					}
 					
 					$kreis = substr($val,0,5);
 					$kreisNodeID = @$spaceIDs[$kreis];
 					if (!$kreisNodeID) {
 						// Kreis existiert noch nicht und muss angelegt werden
-						$nodeID++;
-						$nodes[] = array($kreis, $kreis);
-						$kreisNodeID = $nodeID;
-						$spaceIDs[$kreis] = $nodeID;
-						
-						// Relation zum Land anlegen
-						$relations[] = array($landNodeID, $kreisNodeID, $relTypeAdmin, null, null, $sheetInfo[0]);
+						echo "\nFEHLER: Kreis $kreis existiert nicht.";
 					}
+					
 					
 					$ags = $val;
 					$name = $sheet->getCellByColumnAndRow(1, $row)->getValue();
@@ -137,7 +128,7 @@ foreach($dateiformate as $fileName=>$sheets) {
 					if (!$gemeindeNodeID) {
 						// Gemeinde existiert noch nicht und muss angelegt werden
 						$nodeID++;
-						$nodes[] = array($ags, $name);
+						$nodes[] = array($ags, null, $name);
 						$gemeindeNodeID = $nodeID;
 						$spaceIDs[$ags] = $nodeID;
 					}
@@ -158,12 +149,46 @@ foreach($dateiformate as $fileName=>$sheets) {
 				
 			break; // A ================================================================
 			case "B": 
+				// GEMEINDEDATEN AB 2010
 				//	0		1		2		3	4		5	6	7				8		9			10			11			12		13
 				//	Satzart	Textk.	Regionalschlüssel (RS)		Gemeindename	Fläche	Bevölkerung	-			-			-		PLZ
 				//					Land	RB	Kreis	VB	Gem							insgesamt	männlich	weiblich	je km2	
 				$row = 7;
 			
 			break; // B ================================================================
+			case "C":
+				// KREISDATEN 19XX-2003
+				// 0		1		2					3			4			5			6			7
+				// Schlüssel-nummer	Kreisfreie Stadt	Fläche km2	Bevölkerung	-			-			-		
+				//					Kreis / Landkreis				insgesamt	männlich	weiblich	je km2
+				$emptyCount = 0;
+				$row = 2;
+				while ($emptyCount<10){
+					$id = $sheet->getCellByColumnAndRow(0, ++$row)->getValue();
+					$id = str_replace(" ","", $id); // Leerzeichen filtern
+					if (!empty($id)) {
+						$emptyCount = 0;
+						switch (strlen($id)) {
+							case 5:	// Kreise
+								$name = $sheet->getCellByColumnAndRow(2, $row)->getValue();
+								if ($name) {
+									$kreisNodeID = getAndCreateKreis($id, $name, $sheetInfo[0]);
+								}
+								// Bei Kreis Einwohner und Fläche speichern?
+							break;
+							case 2: // Länder
+								$name = $sheet->getCellByColumnAndRow(1, $row)->getValue();
+								if ($name) {
+									$landNodeID = getAndCreateLand($id, $name, $sheetInfo[0]);
+								}
+							break;
+						}
+					} else {
+						// Zähle Zeilen ohne Eintrag bei der ID hoch.
+						$emptyCount++;
+					}
+				}
+			break; // C ================================================================
 			case "NODES":
 				// col	0		1			2				3
 				//		id		ags:string	klasse:string	name:string
@@ -249,11 +274,46 @@ unset($nodes);
 unset($relations);
 
 
+// returns Node-ID for Land
+function getAndCreateLand($id, $name, $date) {
+	global $relTypeAdmin, $nodeID, $spaceIDs, $nodes, $relations;
+	$landNodeID = @$spaceIDs[$id];
+	if (!$landNodeID) {
+		// Land existiert noch nicht und muss angelegt werden
+		$nodeID++;
+		$nodes[] = array($id, null, $name);
+		$landNodeID = $nodeID;
+		$spaceIDs[$id] = $nodeID;
+	}
+	// Relation zu DE anlegen
+	$relations[] = array($spaceIDs['DE'], $landNodeID, $relTypeAdmin, null, null, $date);
+	return $landNodeID;
+}
+
+function getAndCreateKreis($id, $name, $date) {
+	global $relTypeAdmin, $nodeID, $spaceIDs, $nodes, $relations;
+	$kreisNodeID = @$spaceIDs[$id];
+	if (!$kreisNodeID) {
+		// Kreis existiert noch nicht und muss angelegt werden		
+		$nodeID++;
+		$nodes[] = array($id, null, $name);
+		$kreisNodeID = $nodeID;
+		$spaceIDs[$id] = $nodeID;	
+	}	
+	// Relation zum Land anlegen
+	$landNodeID = @$spaceIDs[(substr($id,0,2))];
+	if (!$landNodeID) {
+		echo "\nFEHLER: Land $id existiert nicht.";
+	}
+	$relations[] = array($landNodeID, $kreisNodeID, $relTypeAdmin, null, null, $date);
+	return $kreisNodeID;
+}
+
 
 // =========================================================
 // Wanderungsdaten
 // =========================================================
-
+/*
 echo "\nVerarbeite Wanderungsdaten.\n";
 
 ini_set('auto_detect_line_endings',TRUE);
@@ -280,7 +340,7 @@ foreach ($csvDateien as $dateiname) {
 		}else{
 			$line[1] = substr($line[1],0,3);
 		}	
-		echo (count($line)." - ".$line[0]." -  ".$line[1]." - ".$line[3]."\n");
+		// echo (count($line)." - ".$line[0]." -  ".$line[1]." - ".$line[3]."\n");
 
 		// Knoten-ID für AGS aus $spaceIDs suchen
 		
@@ -293,10 +353,12 @@ foreach ($csvDateien as $dateiname) {
 }
 
 // Öffne Relations-Ausgabedatei erneut, jetzt aber zum anhängen
+
 $relFile = fopen($outputFolder.'rels.csv','a');
 foreach( $relations as $rel) {
 	fwrite( $relFile, "\n".implode("\t", $rel));
 }
 // Schließe Ausgabedatei
 fclose($relFile);
+*/
 ?>
