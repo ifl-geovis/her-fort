@@ -6,6 +6,7 @@ $dateiformate = array(
 // 	Blattname				Datum			Tabellentyp
 
 // Allgemeine Anwendungsdaten
+// Müssen zuerst abgearbeitet werden! Keine Dateien davor einfügen!
 
 "anwendungsdaten.xls"=>array(
 	"nodes"		=>	array(	"",				"NODES" ),
@@ -13,6 +14,7 @@ $dateiformate = array(
 ),
 
 // Erfassung der Kreis- und Länderdaten VOR 2010
+// Müssen vor den Gemeindedaten abgearbeitet werden! Keine Gemeindedaten davor einfügen!
 
 "Kreisbericht_2000.xls"=>array(	"31.12.2000" =>	array(	"20001231",		"C")),
 "Kreisbericht_2001.xls"=>array(	"31.12.2001" =>	array(	"20011231",		"C")),

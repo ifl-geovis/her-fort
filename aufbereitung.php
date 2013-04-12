@@ -42,6 +42,8 @@ $bevID = 0;
 // NodeIDs für Räume
 // array( "DE" => 5, "01" => 24, "01001"=> 22321 );
 $spaceIDs = array();
+// NodeIDs für Datum, array( "20121231"=>45 );
+$dateIDs = array();
 
 // Knoten und Relationen
 $nodes = array();
@@ -94,12 +96,66 @@ foreach($dateiformate as $fileName=>$sheets) {
 		//$xls = new XLS($sourceFolder.$fileName, $sheetName);
 		echo "OK. Verarbeite...";
 		
+		
+		
 		switch ($sheetInfo[1]) {
+			// NODES und RELS müssen zuerst abgearbeitet werden, d.h. in der formate.php ganz am Anfang stehen
+			case "NODES":
+				// col	0		1			2				3
+				//		id		ags:string	klasse:string	name:string
+
+				$col = 0;
+				$row = 2;
+				$val = $sheet->getCellByColumnAndRow(0, $row)->getValue();
+				while (!empty($val)){
+					$ags=$sheet->getCellByColumnAndRow(1, $row)->getValue();
+					$klasse=$sheet->getCellByColumnAndRow(2, $row)->getValue();
+					$name=$sheet->getCellByColumnAndRow(3, $row)->getValue();
+					
+					$nodeID++;
+					$nodes[] = array($ags, $klasse, $name);
+					
+					// Bestimmte Node-IDs zur späteren Verwendung speichern
+					if ($name=="Fläche") {
+						$flID = $nodeID;
+					} else if ($name=="Bevölkerung") {
+						$bevID = $nodeID;
+					} else if ($ags=="DE") {
+						$spaceIDs['DE'] = $nodeID;
+					} else if ($name=="Datum") {
+						$dateIDs['node']= $nodeID;
+					}
+					
+					$val = $sheet->getCellByColumnAndRow(0, ++$row)->getValue();
+				}
+			break; // NODES ============================================================
+			case "RELS":
+				// col	0		1		2		3
+				// 		start	end		type	d:int
+
+				$col = 0;
+				$row = 2;
+				
+				$val = $sheet->getCellByColumnAndRow(0, $row)->getValue();
+				while ($val!==null){
+					$start = $val;
+					$end = $sheet->getCellByColumnAndRow(1, $row)->getValue();
+					$type = $sheet->getCellByColumnAndRow(2, $row)->getValue();
+					
+					$relations[] = array($start, $end, $type, null, null, 0);
+					
+					$val = $sheet->getCellByColumnAndRow(0, ++$row)->getValue();
+				}
+			
+			break; // RELS =============================================================
 			case "A": 
 				// GEMEINDEDATEN BIS 2009
 				// col	0		1			2			3			4			5
 				//		AGS		Gemeinde	Fläche km2	Bevölkerung		
 				//										insgesamt	männlich	weiblich
+				
+				// Datums-Knoten suchen
+				$dateNodeID = getOrCreateDate( $sheetInfo[0] );
 				$row = 5;
 				
 				$val = $sheet->getCellByColumnAndRow(0, $row)->getValue();
@@ -154,6 +210,9 @@ foreach($dateiformate as $fileName=>$sheets) {
 				//	Satzart	Textk.	Regionalschlüssel (RS)		Gemeindename	Fläche	Bevölkerung	-			-			-		PLZ
 				//					Land	RB	Kreis	VB	Gem							insgesamt	männlich	weiblich	je km2	
 				$row = 7;
+				
+				// Datums-Knoten suchen
+				$dateNodeID = getOrCreateDate( $sheetInfo[0] );
 			
 			break; // B ================================================================
 			case "C":
@@ -189,52 +248,6 @@ foreach($dateiformate as $fileName=>$sheets) {
 					}
 				}
 			break; // C ================================================================
-			case "NODES":
-				// col	0		1			2				3
-				//		id		ags:string	klasse:string	name:string
-
-				$col = 0;
-				$row = 2;
-				$val = $sheet->getCellByColumnAndRow(0, $row)->getValue();
-				while (!empty($val)){
-					$ags=$sheet->getCellByColumnAndRow(1, $row)->getValue();
-					$klasse=$sheet->getCellByColumnAndRow(2, $row)->getValue();
-					$name=$sheet->getCellByColumnAndRow(3, $row)->getValue();
-					
-					$nodeID++;
-					$nodes[] = array($ags, $klasse, $name);
-					
-					// Bestimmte Node-IDs zur späteren Verwendung speichern
-					if ($name=="Fläche") {
-						$flID = $nodeID;
-					} else if ($name=="Bevölkerung") {
-						$bevID = $nodeID;
-					} else if ($ags=="DE") {
-						$spaceIDs['DE'] = $nodeID;
-					}
-					
-					$val = $sheet->getCellByColumnAndRow(0, ++$row)->getValue();
-				}
-			break; // NODES ============================================================
-			case "RELS":
-				// col	0		1		2		3
-				// 		start	end		type	d:int
-
-				$col = 0;
-				$row = 2;
-				
-				$val = $sheet->getCellByColumnAndRow(0, $row)->getValue();
-				while ($val!==null){
-					$start = $val;
-					$end = $sheet->getCellByColumnAndRow(1, $row)->getValue();
-					$type = $sheet->getCellByColumnAndRow(2, $row)->getValue();
-					
-					$relations[] = array($start, $end, $type, null, null, 0);
-					
-					$val = $sheet->getCellByColumnAndRow(0, ++$row)->getValue();
-				}
-			
-			break; // RELS =============================================================
 		}
 		
 		// Aufräumen
@@ -307,6 +320,20 @@ function getAndCreateKreis($id, $name, $date) {
 	}
 	$relations[] = array($landNodeID, $kreisNodeID, $relTypeAdmin, null, null, $date);
 	return $kreisNodeID;
+}
+
+function getOrCreateDate( $date ) {
+	global $nodeID, $dateIDs, $nodes, $relations;
+	$dateNodeID = @$dateIDs[$date];
+	if (!$dateNodeID) {
+		$nodeID++;
+		$nodes[] = array( null, $date, $date );
+		$dateIDs[$date] = $nodeID;
+		$dateNodeID = $nodeID;
+		
+		$relations[] = array($dateIDs['node'], $dateNodeID, "KLASSE", null, null, 0);
+	}
+	return $dateNodeID;
 }
 
 
