@@ -206,13 +206,81 @@ foreach($dateiformate as $fileName=>$sheets) {
 			break; // A ================================================================
 			case "B": 
 				// GEMEINDEDATEN AB 2010
+				//	A		B		...																						...		N
 				//	0		1		2		3	4		5	6	7				8		9			10			11			12		13
 				//	Satzart	Textk.	Regionalschlüssel (RS)		Gemeindename	Fläche	Bevölkerung	-			-			-		PLZ
 				//					Land	RB	Kreis	VB	Gem							insgesamt	männlich	weiblich	je km2	
-				$row = 7;
+				$row = 5;
 				
 				// Datums-Knoten suchen
 				$dateNodeID = getOrCreateDate( $sheetInfo[0] );
+				
+				$emptyCount = 0;
+				while ($emptyCount<10){
+					$satzArt = $sheet->getCellByColumnAndRow(0, ++$row)->getValue();
+					
+					$land = $sheet->getCellByColumnAndRow(2, $row)->getValue();
+					$landNodeID = @$spaceIDs[$land];
+					
+					$kreis = $land
+							.$sheet->getCellByColumnAndRow(3, $row)->getValue()
+							.$sheet->getCellByColumnAndRow(4, $row)->getValue();
+					$kreisNodeID = @$spaceIDs[$kreis];
+					
+					$name = $sheet->getCellByColumnAndRow(7, $row)->getValue();
+					
+					switch ($satzArt) {
+						case 60: // Gemeinde
+							$ags = $kreis
+									.$sheet->getCellByColumnAndRow(6, $row)->getValue();
+							
+							if (!$landNodeID || !$kreisNodeID) {
+								// Kreis existiert noch nicht und muss angelegt werden
+								echo "\nFEHLER: Land $land oder Kreis $kreis existieren nicht. $ags wird ignoriert.";
+							} else {
+							
+								$gemeindeNodeID = @$spaceIDs[$ags];
+								if (!$gemeindeNodeID) {
+									// Gemeinde existiert noch nicht und muss angelegt werden
+									$nodeID++;
+									$nodes[] = array($ags, null, $name);
+									$gemeindeNodeID = $nodeID;
+									$spaceIDs[$ags] = $nodeID;
+								}
+								// Relation zum Kreis anlegen
+								$relations[] = array($kreisNodeID, $gemeindeNodeID, $relTypeAdmin, null, null, $sheetInfo[0]);
+								
+								// Relation zu Daten anlegen
+								$relations[] = array($gemeindeNodeID, $flID,
+											$relTypeFl, $sheet->getCellByColumnAndRow(8, $row)->getValue(),
+											null, $sheetInfo[0]);
+								$relations[] = array($gemeindeNodeID, $bevID,
+											$relTypeBev, $sheet->getCellByColumnAndRow(9, $row)->getValue(),
+											null, $sheetInfo[0]);
+							}
+							$emptyCount = 0;
+						break;
+						
+						
+						
+						case 40: // Kreis
+							if (!$kreisNodeID) {
+								$kreisNodeID = getAndCreateKreis($kreis, $name, $sheetInfo[0]);
+							}
+							$emptyCount = 0;
+						break;
+						
+						
+						
+						case 10: // Land
+							if (!$landNodeID) {
+								$landNodeID = getAndCreateLand($land, $name, $sheetInfo[0]);
+							}
+						break;
+						default:
+							$emptyCount++;
+					}
+				}
 			
 			break; // B ================================================================
 			case "C":
