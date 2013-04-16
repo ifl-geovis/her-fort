@@ -4,7 +4,7 @@ $sourceFolder = "sourcedata/wander/";
 //$outputFolder = "importdata/";
 
 
-
+include "wanderungsdaten.php";
 
 
 
@@ -27,7 +27,10 @@ foreach ($csvDateien as $dateiname) {
 	$csvFile = fopen( $dateiname,'r');
 	$falschname = "test";
 	$header = fgetcsv( $csvFile );
-	if(is_numeric($header[0])) {
+	
+	$sperk = spaltenerkennung($header);
+	$linecount = 1;
+	/*if(is_numeric($header[0])) {
 		echo "\n Header ist nicht vorhanden!\n Datei beginnt mit Zahlenwert: ".$header[0]."\n";
     }
 	if (((substr( $header[0], 0, 4 )) === "JAHR") && ((substr( $header[1], 0, 4 )) === "SCHL") && ((substr( $header[2], 0, 3 )) === "ART") && ((substr( $header[3], 0, 5 )) === "SCHL1") && ((substr( $header[4], 0, 6 )) === "GESCHL") && ((substr( $header[5], 0, 3 )) === "ANZ") && ((substr( $header[6], 0, 2 )) === "AG") && ((substr( $header[7], 0, 3 )) === "FAM") && ((substr( $header[8], 0, 3 )) === "NAT")){
@@ -38,36 +41,38 @@ foreach ($csvDateien as $dateiname) {
 	}
 		$linecount = 1;
 		// Liest Zeile für Zeile aus der Datei aus
-
-	while ((($line = fgetcsv($csvFile)) !== FALSE) && ((substr( $header[0], 0, 4 )) === "JAHR") && ((substr( $header[1], 0, 4 )) === "SCHL") && ((substr( $header[2], 0, 3 )) === "ART") && ((substr( $header[3], 0, 5 )) === "SCHL1") && ((substr( $header[4], 0, 6 )) === "GESCHL") && ((substr( $header[5], 0, 3 )) === "ANZ") && ((substr( $header[6], 0, 2 )) === "AG") && ((substr( $header[7], 0, 3 )) === "FAM") && ((substr( $header[8], 0, 3 )) === "NAT")){
+	if ($klaus===null) {
+		die("Ich kann so nicht arbeiten....");
+	}*/
+	while ((($line = fgetcsv($csvFile)) !== FALSE) /*&& ((substr( $header[0], 0, 4 )) === "JAHR") && ((substr( $header[1], 0, 4 )) === "SCHL") && ((substr( $header[2], 0, 3 )) === "ART") && ((substr( $header[3], 0, 5 )) === "SCHL1") && ((substr( $header[4], 0, 6 )) === "GESCHL") && ((substr( $header[5], 0, 3 )) === "ANZ") && ((substr( $header[6], 0, 2 )) === "AG") && ((substr( $header[7], 0, 3 )) === "FAM") && ((substr( $header[8], 0, 3 )) === "NAT")*/){
 	 
 		$linecount++;
-		if ($line[0] < 1990 || $line[0] > 2011){
-		echo ("\n   Zeile:".($linecount)." hat falsche Datumsangabe");
+		if ($line[$sperk['JAHR']] < 1990 || $line[$sperk['JAHR']] > 2011){
+		echo ("\n   Zeile:".($linecount)." hat falsche Datumsangabe: ".$line[$sperk['JAHR']]);
 		}
-		if ((strlen($line[1])) < 9 ||(strlen($line[1])) > 9){
-		echo ("\n   Zeile:".($linecount)." hat falschen AGS-Wert");
+		if ((strlen($line[$sperk['SCHL']])) < 9 ||(strlen($line[$sperk['SCHL']])) > 9){
+		echo ("\n   Zeile:".($linecount)." hat falschen AGS-Wert: ".$line[$sperk['SCHL']]);
 		}
-		if ($line[2] > 1){
-		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Umzugsart");
+		if ($line[$sperk['ART']] > 1){
+		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Umzugsart: ".$line[$sperk['ART']]);
 		}
-		if ((strlen($line[3])) < 9 ||(strlen($line[3])) > 9){
-		echo ("\n   Zeile:".($linecount)." hat falschen AGS-2-Wert");
+		if ((strlen($line[$sperk['SCHL1']])) < 9 ||(strlen($line[$sperk['SCHL']])) > 9){
+		echo ("\n   Zeile:".($linecount)." hat falschen AGS-2-Wert: ".$line[$sperk['SCHL1']]);
 		}
-		if ($line[4] > 2 || $line[4] < 1){
-		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Geschlecht");
+		if ($line[$sperk['GESCHL']] > 2 || $line[$sperk['GESCHL']] < 1){
+		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Geschlecht: ".$line[$sperk['GESCHL']]);
 		}
-		if ($line[5] < 1){
-		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Anzahl");
+		if ($line[$sperk['ANZ']] < 1){
+		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Anzahl: ".$line[$sperk['ANZ']]);
 		}
-		if ($line[6] > 7 || $line[6] < 1){
-		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Altersgruppe");
+		if ($line[$sperk['AG']] > 7 || $line[$sperk['AG']]  < 1){
+		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Altersgruppe: ".$line[$sperk['AG']]);
 		}
-		if ($line[7] > 2){
-		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Familienstand");
+		if ($line[$sperk['FAM']]  > 2){
+		echo ("\n   Zeile:".($linecount)." hat falschen Wert in Feld Familienstand: ".$line[$sperk['FAM']]);
 		}
-		if (!$line[8]== "D" || !$line[8] == "A"){
-		echo ("\n   Zeile:".($linecount)." hat falschen Nation-Wert");
+		if (!$line[$sperk['NAT']] == "D" || !$line[$sperk['NAT']] == "A"){
+		echo ("\n   Zeile:".($linecount)." hat falschen Nation-Wert: ".$line[$sperk['NAT']]);
 		}
 	
 	}
