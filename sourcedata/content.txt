@@ -9,4 +9,85 @@ Wanderungsdaten Herfert:
 2.) Kommandozeile dbf_konvertieren.bat aufrufen. Konvertiert alle *.dbf Dateien in *.dbf.csv Dateien.
 3.) *.dbf Dateien können gelöscht werden.
 
-TODO: Überprüfen, ob alle Dateien fehlerfrei konvertiert werden.
+//TODO: Überprüfen, ob alle Dateien fehlerfrei konvertiert werden.
+
+Datentest der Ausgangsdaten Herfert:
+
+Datenfehler vor Bereinigung:
+Gesamt: 	715
+Datum:		27
+AGS:		18
+AGS-2:		586
+FAM:		4
+NAT:		14
+Geschl:		24
+AG:			22
+Anzahl:		20
+Art:		0
+
+Manuelle Bereinigung Ausgangsdaten Herfert:
+
+A2000.DBF.csv 
+	Zeile 2 komplett gelöscht
+	
+A2001.DBF.csv
+	Zeile 2 komplett gelöscht
+	
+A2002.DBF.csv
+	Zeile 2 komplett gelöscht
+	
+A2003.DBF.csv
+	Zeile 2 komplett gelöscht
+	
+A2004.DBF.csv
+	Zeile 2 komplett gelöscht
+	
+B2006.DBF.csv
+	Zeile 12037 komplett gelöscht
+	Zeile 25473 komplett gelöscht
+	Zeile 61085 komplett gelöscht
+	Zeile 95179 komplett gelöscht
+	Zeile 119646 komplett gelöscht
+	Zeile 140319 komplett gelöscht
+	Zeile 151918 komplett gelöscht
+	
+S2001.DBF.csv
+	Zeile 22938 Datum korrigiert
+	Zeile 61754 Datum korrigiert
+	Zeile 148980 Datum korrigiert
+	Zeile 216910 Datum korrigiert
+	Zeile 255726 Datum korrigiert
+	Zeile 284727 Datum korrigiert	
+	
+b2004.DBF.csv
+	Zeile 19814 komplett gelöscht
+	Zeile 19815 komplett gelöscht
+	Zeile 44696 komplett gelöscht
+	Zeile 44697 komplett gelöscht
+	Zeile 100601 komplett gelöscht
+	Zeile 100602 komplett gelöscht
+	Zeile 152969 komplett gelöscht
+	Zeile 152970 komplett gelöscht
+	Zeile 191072 komplett gelöscht
+	Zeile 191073 komplett gelöscht
+	Zeile 222354 komplett gelöscht
+	Zeile 222355 komplett gelöscht
+	
+t2001.DBF.csv
+	Zeile 15919 falschen AGS-2-Wert berichtigt
+	Zeile 30892 falsche Datumsangabe berichtigt
+	Zeile 113239 falsche Datumsangabe berichtigt
+
+Datenfehler nach Bereinigung:
+Gesamt: 	577
+Datum:		0
+AGS:		0
+AGS-2:		567
+FAM:		4
+NAT:		0
+Geschl:		0
+AG:			3
+Anzahl:		3
+Art:		0	
+
+TODO: Überprüfen, ob Doppelungen in den Wanderungsdaten vorhanden sind.

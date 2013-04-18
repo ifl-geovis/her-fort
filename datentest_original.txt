@@ -5,146 +5,166 @@ Ueberpruefe Wanderungsdaten.
  
  Lese sourcedata/wander/A2000.DBF.csv
 
- Fehleranzahl: 0 von 236085
- Fehlerquote: 0
+ Fehler-Nr.: 1| Zeile:2 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 2| Zeile:2 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 3| Zeile:2 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 4| Zeile:2 hat falschen Wert in Feld Anzahl: 0
+ Fehleranzahl: 4 von 236086
+ Fehlerquote: 0.0016942978406174
  
  Lese sourcedata/wander/A2001.DBF.csv
 
- Fehleranzahl: 0 von 467792
- Fehlerquote: 0
+ Fehler-Nr.: 1| Zeile:2 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 2| Zeile:2 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 3| Zeile:2 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 4| Zeile:2 hat falschen Wert in Feld Anzahl: 0
+ Fehleranzahl: 8 von 467794
+ Fehlerquote: 0.0017101544697025
  
  Lese sourcedata/wander/A2002.DBF.csv
 
- Fehleranzahl: 0 von 693217
- Fehlerquote: 0
+ Fehler-Nr.: 1| Zeile:2 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 2| Zeile:2 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 3| Zeile:2 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 4| Zeile:2 hat falschen Wert in Feld Anzahl: 0
+ Fehleranzahl: 12 von 693220
+ Fehlerquote: 0.0017310521912236
  
  Lese sourcedata/wander/A2003.DBF.csv
 
- Fehleranzahl: 0 von 913353
- Fehlerquote: 0
+ Fehler-Nr.: 1| Zeile:2 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 2| Zeile:2 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 3| Zeile:2 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 4| Zeile:2 hat falschen Wert in Feld Anzahl: 0
+ Fehleranzahl: 16 von 913357
+ Fehlerquote: 0.0017517794246937
  
  Lese sourcedata/wander/A2004.DBF.csv
 
- Fehler-Nr.: 1| Zeile:2 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 2| Zeile:3 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 3| Zeile:4465 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 4| Zeile:5525 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 5| Zeile:7773 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 6| Zeile:7774 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 7| Zeile:11826 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 8| Zeile:14329 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 9| Zeile:14330 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 10| Zeile:14331 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 11| Zeile:14332 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 12| Zeile:15868 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 13| Zeile:18906 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 14| Zeile:18907 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 15| Zeile:18908 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 16| Zeile:18909 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 17| Zeile:18910 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 18| Zeile:18911 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 19| Zeile:18912 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 20| Zeile:18913 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 21| Zeile:18914 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 22| Zeile:18915 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 23| Zeile:28155 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 24| Zeile:28156 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 25| Zeile:28480 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 26| Zeile:31189 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 27| Zeile:31190 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 28| Zeile:33118 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 29| Zeile:36325 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 30| Zeile:40198 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 31| Zeile:42276 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 32| Zeile:45638 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 33| Zeile:45639 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 34| Zeile:45640 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 35| Zeile:49993 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 36| Zeile:52053 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 37| Zeile:53470 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 38| Zeile:53471 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 39| Zeile:53472 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 40| Zeile:53473 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 41| Zeile:61117 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 42| Zeile:61118 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 43| Zeile:61119 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 44| Zeile:61120 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 45| Zeile:61121 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 46| Zeile:64256 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 47| Zeile:72621 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 48| Zeile:72622 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 49| Zeile:72623 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 50| Zeile:72624 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 51| Zeile:72625 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 52| Zeile:81292 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 53| Zeile:83241 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 54| Zeile:83242 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 55| Zeile:83243 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 56| Zeile:83244 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 57| Zeile:83467 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 58| Zeile:83468 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 59| Zeile:83469 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 60| Zeile:91557 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 61| Zeile:91558 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 62| Zeile:91559 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 63| Zeile:95682 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 64| Zeile:97031 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 65| Zeile:97032 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 66| Zeile:100289 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 67| Zeile:104814 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 68| Zeile:104815 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 69| Zeile:113179 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 70| Zeile:113180 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 71| Zeile:113181 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 72| Zeile:115806 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 73| Zeile:119237 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 74| Zeile:123538 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 75| Zeile:123539 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 76| Zeile:123540 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 77| Zeile:123541 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 78| Zeile:123542 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 79| Zeile:135307 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 80| Zeile:135308 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 81| Zeile:135309 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 82| Zeile:141434 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 83| Zeile:142085 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 84| Zeile:146257 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 85| Zeile:149737 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 86| Zeile:151986 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 87| Zeile:151987 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 88| Zeile:151988 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 89| Zeile:153757 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 90| Zeile:157235 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 91| Zeile:160552 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 92| Zeile:160553 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 93| Zeile:162174 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 94| Zeile:162175 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 95| Zeile:170005 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 96| Zeile:170006 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 97| Zeile:172414 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 98| Zeile:172415 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 99| Zeile:172416 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 100| Zeile:174147 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 101| Zeile:174148 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 102| Zeile:174149 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 103| Zeile:174150 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 104| Zeile:177832 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 105| Zeile:186135 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 106| Zeile:194305 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 107| Zeile:195761 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 108| Zeile:195762 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 109| Zeile:199110 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 110| Zeile:205735 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 111| Zeile:210461 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 112| Zeile:210799 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 113| Zeile:211101 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 114| Zeile:211102 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 115| Zeile:211103 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 116| Zeile:211832 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 117| Zeile:211833 hat falschen AGS-2-Wert: 0
- Fehler-Nr.: 118| Zeile:212585 hat falschen AGS-2-Wert: 0
- Fehleranzahl: 118 von 1128987
- Fehlerquote: 0.010451847541203
+ Fehler-Nr.: 1| Zeile:2 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 2| Zeile:2 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 3| Zeile:2 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 4| Zeile:2 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 5| Zeile:3 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 6| Zeile:4 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 7| Zeile:4466 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 8| Zeile:5526 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 9| Zeile:7774 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 10| Zeile:7775 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 11| Zeile:11827 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 12| Zeile:14330 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 13| Zeile:14331 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 14| Zeile:14332 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 15| Zeile:14333 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 16| Zeile:15869 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 17| Zeile:18907 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 18| Zeile:18908 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 19| Zeile:18909 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 20| Zeile:18910 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 21| Zeile:18911 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 22| Zeile:18912 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 23| Zeile:18913 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 24| Zeile:18914 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 25| Zeile:18915 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 26| Zeile:18916 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 27| Zeile:28156 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 28| Zeile:28157 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 29| Zeile:28481 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 30| Zeile:31190 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 31| Zeile:31191 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 32| Zeile:33119 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 33| Zeile:36326 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 34| Zeile:40199 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 35| Zeile:42277 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 36| Zeile:45639 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 37| Zeile:45640 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 38| Zeile:45641 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 39| Zeile:49994 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 40| Zeile:52054 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 41| Zeile:53471 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 42| Zeile:53472 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 43| Zeile:53473 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 44| Zeile:53474 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 45| Zeile:61118 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 46| Zeile:61119 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 47| Zeile:61120 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 48| Zeile:61121 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 49| Zeile:61122 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 50| Zeile:64257 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 51| Zeile:72622 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 52| Zeile:72623 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 53| Zeile:72624 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 54| Zeile:72625 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 55| Zeile:72626 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 56| Zeile:81293 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 57| Zeile:83242 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 58| Zeile:83243 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 59| Zeile:83244 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 60| Zeile:83245 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 61| Zeile:83468 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 62| Zeile:83469 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 63| Zeile:83470 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 64| Zeile:91558 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 65| Zeile:91559 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 66| Zeile:91560 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 67| Zeile:95683 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 68| Zeile:97032 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 69| Zeile:97033 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 70| Zeile:100290 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 71| Zeile:104815 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 72| Zeile:104816 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 73| Zeile:113180 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 74| Zeile:113181 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 75| Zeile:113182 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 76| Zeile:115807 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 77| Zeile:119238 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 78| Zeile:123539 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 79| Zeile:123540 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 80| Zeile:123541 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 81| Zeile:123542 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 82| Zeile:123543 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 83| Zeile:135308 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 84| Zeile:135309 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 85| Zeile:135310 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 86| Zeile:141435 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 87| Zeile:142086 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 88| Zeile:146258 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 89| Zeile:149738 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 90| Zeile:151987 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 91| Zeile:151988 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 92| Zeile:151989 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 93| Zeile:153758 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 94| Zeile:157236 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 95| Zeile:160553 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 96| Zeile:160554 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 97| Zeile:162175 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 98| Zeile:162176 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 99| Zeile:170006 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 100| Zeile:170007 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 101| Zeile:172415 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 102| Zeile:172416 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 103| Zeile:172417 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 104| Zeile:174148 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 105| Zeile:174149 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 106| Zeile:174150 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 107| Zeile:174151 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 108| Zeile:177833 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 109| Zeile:186136 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 110| Zeile:194306 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 111| Zeile:195762 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 112| Zeile:195763 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 113| Zeile:199111 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 114| Zeile:205736 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 115| Zeile:210462 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 116| Zeile:210800 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 117| Zeile:211102 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 118| Zeile:211103 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 119| Zeile:211104 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 120| Zeile:211833 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 121| Zeile:211834 hat falschen AGS-2-Wert: 0
+ Fehler-Nr.: 122| Zeile:212586 hat falschen AGS-2-Wert: 0
+ Fehleranzahl: 138 von 1128992
+ Fehlerquote: 0.012223292990561
  
  Lese sourcedata/wander/A2005.DBF.csv
 
@@ -164,8 +184,8 @@ Ueberpruefe Wanderungsdaten.
  Fehler-Nr.: 14| Zeile:130109 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 15| Zeile:130110 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 16| Zeile:188736 hat falschen AGS-2-Wert: 0
- Fehleranzahl: 134 von 1332513
- Fehlerquote: 0.010056187069094
+ Fehleranzahl: 154 von 1332518
+ Fehlerquote: 0.01155706714656
  
  Lese sourcedata/wander/A2006.DBF.csv
 
@@ -175,8 +195,8 @@ Ueberpruefe Wanderungsdaten.
  Fehler-Nr.: 4| Zeile:9113 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 5| Zeile:9114 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 6| Zeile:148151 hat falschen AGS-2-Wert: 0
- Fehleranzahl: 140 von 1519711
- Fehlerquote: 0.0092122778607248
+ Fehleranzahl: 160 von 1519716
+ Fehlerquote: 0.010528282916019
  
  Lese sourcedata/wander/A2007.DBF.csv
 
@@ -190,8 +210,8 @@ Ueberpruefe Wanderungsdaten.
  Fehler-Nr.: 8| Zeile:165843 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 9| Zeile:169596 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 10| Zeile:169597 hat falschen AGS-2-Wert: 0
- Fehleranzahl: 150 von 1707569
- Fehlerquote: 0.0087844180820804
+ Fehleranzahl: 170 von 1707574
+ Fehlerquote: 0.0099556446748428
  
  Lese sourcedata/wander/A2008.DBF.csv
 
@@ -558,8 +578,8 @@ Ueberpruefe Wanderungsdaten.
  Fehler-Nr.: 361| Zeile:186922 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 362| Zeile:189150 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 363| Zeile:191064 hat falschen AGS-2-Wert: 0
- Fehleranzahl: 513 von 1898760
- Fehlerquote: 0.027017632560197
+ Fehleranzahl: 533 von 1898765
+ Fehlerquote: 0.028070877649419
  
  Lese sourcedata/wander/A2009.DBF.csv
 
@@ -576,8 +596,8 @@ Ueberpruefe Wanderungsdaten.
  Fehler-Nr.: 11| Zeile:158732 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 12| Zeile:158733 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 13| Zeile:158734 hat falschen AGS-2-Wert: 0
- Fehleranzahl: 526 von 2083921
- Fehlerquote: 0.025240880052555
+ Fehleranzahl: 546 von 2083926
+ Fehlerquote: 0.026200546468541
  
  Lese sourcedata/wander/A2010.DBF.csv
 
@@ -606,8 +626,8 @@ Ueberpruefe Wanderungsdaten.
  Fehler-Nr.: 23| Zeile:134653 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 24| Zeile:136069 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 25| Zeile:138426 hat falschen AGS-2-Wert: 0
- Fehleranzahl: 551 von 2245516
- Fehlerquote: 0.024537789977894
+ Fehleranzahl: 571 von 2245521
+ Fehlerquote: 0.025428397240551
  
  Lese sourcedata/wander/A2011.DBF.csv
 
@@ -631,246 +651,364 @@ Ueberpruefe Wanderungsdaten.
  Fehler-Nr.: 18| Zeile:141038 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 19| Zeile:159548 hat falschen AGS-2-Wert: 0
  Fehler-Nr.: 20| Zeile:162649 hat falschen Wert in Feld Familienstand: 5
- Fehleranzahl: 571 von 2412370
- Fehlerquote: 0.023669669246426
+ Fehleranzahl: 591 von 2412375
+ Fehlerquote: 0.024498678688015
  
  Lese sourcedata/wander/B2006.DBF.csv
 
- Fehleranzahl: 571 von 2564281
- Fehlerquote: 0.022267450408126
+ Fehler-Nr.: 1| Zeile:12037 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 2| Zeile:12037 hat falschen AGS-Wert: 
+ Fehler-Nr.: 3| Zeile:12037 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 4| Zeile:12037 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 5| Zeile:12037 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 6| Zeile:12037 hat falschen Nation-Wert: 
+ Fehler-Nr.: 7| Zeile:25473 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 8| Zeile:25473 hat falschen AGS-Wert: 
+ Fehler-Nr.: 9| Zeile:25473 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 10| Zeile:25473 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 11| Zeile:25473 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 12| Zeile:25473 hat falschen Nation-Wert: 
+ Fehler-Nr.: 13| Zeile:61085 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 14| Zeile:61085 hat falschen AGS-Wert: 
+ Fehler-Nr.: 15| Zeile:61085 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 16| Zeile:61085 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 17| Zeile:61085 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 18| Zeile:61085 hat falschen Nation-Wert: 
+ Fehler-Nr.: 19| Zeile:95179 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 20| Zeile:95179 hat falschen AGS-Wert: 
+ Fehler-Nr.: 21| Zeile:95179 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 22| Zeile:95179 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 23| Zeile:95179 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 24| Zeile:95179 hat falschen Nation-Wert: 
+ Fehler-Nr.: 25| Zeile:119646 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 26| Zeile:119646 hat falschen AGS-Wert: 
+ Fehler-Nr.: 27| Zeile:119646 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 28| Zeile:119646 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 29| Zeile:119646 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 30| Zeile:119646 hat falschen Nation-Wert: 
+ Fehler-Nr.: 31| Zeile:140319 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 32| Zeile:140319 hat falschen AGS-Wert: 
+ Fehler-Nr.: 33| Zeile:140319 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 34| Zeile:140319 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 35| Zeile:140319 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 36| Zeile:140319 hat falschen Nation-Wert: 
+ Fehler-Nr.: 37| Zeile:151918 hat falsche Datumsangabe: #0
+ Fehler-Nr.: 38| Zeile:151918 hat falschen AGS-Wert: 
+ Fehler-Nr.: 39| Zeile:151918 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 40| Zeile:151918 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 41| Zeile:151918 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 42| Zeile:151918 hat falschen Nation-Wert: 
+ Fehleranzahl: 633 von 2564293
+ Fehlerquote: 0.024685166632674
  
  Lese sourcedata/wander/B2007.DBF.csv
 
- Fehleranzahl: 571 von 2717991
- Fehlerquote: 0.021008163750358
+ Fehleranzahl: 633 von 2718003
+ Fehlerquote: 0.023289157517486
  
  Lese sourcedata/wander/B2008.DBF.csv
 
- Fehleranzahl: 571 von 2871884
- Fehlerquote: 0.019882418649221
+ Fehleranzahl: 633 von 2871896
+ Fehlerquote: 0.022041188121018
  
  Lese sourcedata/wander/B2009.DBF.csv
 
- Fehleranzahl: 571 von 3024679
- Fehlerquote: 0.018878036313936
+ Fehleranzahl: 633 von 3024691
+ Fehlerquote: 0.020927757579204
  
  Lese sourcedata/wander/B2010.DBF.csv
 
- Fehleranzahl: 571 von 3175420
- Fehlerquote: 0.017981873264009
+ Fehleranzahl: 633 von 3175432
+ Fehlerquote: 0.019934295554117
  
  Lese sourcedata/wander/B2011.DBF.csv
 
- Fehleranzahl: 571 von 3328394
- Fehlerquote: 0.017155420902694
+ Fehleranzahl: 633 von 3328406
+ Fehlerquote: 0.019018112574007
  
  Lese sourcedata/wander/M2006.DBF.csv
 
- Fehleranzahl: 571 von 3506363
- Fehlerquote: 0.016284680165744
+ Fehleranzahl: 633 von 3506375
+ Fehlerquote: 0.018052832341093
  
  Lese sourcedata/wander/M2007.DBF.csv
 
- Fehleranzahl: 571 von 3686779
- Fehlerquote: 0.015487774016289
+ Fehleranzahl: 633 von 3686791
+ Fehlerquote: 0.017169402876377
  
  Lese sourcedata/wander/M2008.DBF.csv
 
- Fehleranzahl: 571 von 3874852
- Fehlerquote: 0.01473604669288
+ Fehleranzahl: 633 von 3874864
+ Fehlerquote: 0.016336057213879
  
  Lese sourcedata/wander/M2009.DBF.csv
 
- Fehleranzahl: 571 von 4060291
- Fehlerquote: 0.01406303144282
+ Fehleranzahl: 633 von 4060303
+ Fehlerquote: 0.015589969517053
  
  Lese sourcedata/wander/M2010.DBF.csv
 
- Fehleranzahl: 571 von 4241290
- Fehlerquote: 0.013462885112784
+ Fehleranzahl: 633 von 4241302
+ Fehlerquote: 0.014924662285308
  
  Lese sourcedata/wander/S2000.DBF.csv
 
- Fehleranzahl: 571 von 4629218
- Fehlerquote: 0.012334696702553
+ Fehleranzahl: 633 von 4629230
+ Fehlerquote: 0.013673980337983
  
  Lese sourcedata/wander/S2001.DBF.csv
 
- Fehleranzahl: 571 von 5010511
- Fehlerquote: 0.011396043237905
+ Fehler-Nr.: 1| Zeile:22938 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 2| Zeile:61754 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 3| Zeile:148980 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 4| Zeile:216910 hat falsche Datumsangabe: 20
+ Fehler-Nr.: 5| Zeile:255726 hat falsche Datumsangabe: 20
+ Fehler-Nr.: 6| Zeile:284727 hat falsche Datumsangabe: 0
+ Fehleranzahl: 639 von 5010523
+ Fehlerquote: 0.012753159700095
  
  Lese sourcedata/wander/S2002.DBF.csv
 
- Fehleranzahl: 571 von 5380295
- Fehlerquote: 0.01061280097095
+ Fehleranzahl: 639 von 5380307
+ Fehlerquote: 0.011876645700701
  
  Lese sourcedata/wander/S2003.DBF.csv
 
- Fehleranzahl: 571 von 5739062
- Fehlerquote: 0.0099493610628357
+ Fehleranzahl: 639 von 5739074
+ Fehlerquote: 0.011134200395395
  
  Lese sourcedata/wander/S2004.DBF.csv
 
- Fehleranzahl: 571 von 6093603
- Fehlerquote: 0.0093704824551255
+ Fehleranzahl: 639 von 6093615
+ Fehlerquote: 0.01048638615994
  
  Lese sourcedata/wander/S2005.DBF.csv
 
- Fehleranzahl: 571 von 6438861
- Fehlerquote: 0.008868028056515
+ Fehleranzahl: 639 von 6438873
+ Fehlerquote: 0.0099240969654162
  
  Lese sourcedata/wander/S2006.DBF.csv
 
- Fehleranzahl: 571 von 6775446
- Fehlerquote: 0.0084274894966324
+ Fehleranzahl: 639 von 6775458
+ Fehlerquote: 0.0094310967612817
  
  Lese sourcedata/wander/S2007.DBF.csv
 
- Fehleranzahl: 571 von 7112296
- Fehlerquote: 0.0080283497762185
+ Fehleranzahl: 639 von 7112308
+ Fehlerquote: 0.0089844253089152
  
  Lese sourcedata/wander/S2008.DBF.csv
 
- Fehleranzahl: 571 von 7461104
- Fehlerquote: 0.0076530229306548
+ Fehleranzahl: 639 von 7461116
+ Fehlerquote: 0.0085644024298778
  
  Lese sourcedata/wander/S2009.DBF.csv
 
- Fehleranzahl: 571 von 7814070
- Fehlerquote: 0.007307331518658
+ Fehleranzahl: 639 von 7814082
+ Fehlerquote: 0.008177544080034
  
  Lese sourcedata/wander/S2010.DBF.csv
 
- Fehleranzahl: 571 von 8163074
- Fehlerquote: 0.0069949139258079
+ Fehleranzahl: 639 von 8163086
+ Fehlerquote: 0.0078279219403054
  
  Lese sourcedata/wander/S2011.DBF.csv
 
- Fehleranzahl: 571 von 8528743
- Fehlerquote: 0.0066950076933963
+ Fehleranzahl: 639 von 8528755
+ Fehlerquote: 0.0074923010451115
  
  Lese sourcedata/wander/T2006.DBF.csv
 
- Fehleranzahl: 571 von 8712792
- Fehlerquote: 0.0065535823648722
+ Fehleranzahl: 639 von 8712804
+ Fehlerquote: 0.007334033911471
  
  Lese sourcedata/wander/T2007.DBF.csv
 
- Fehleranzahl: 571 von 8896693
- Fehlerquote: 0.0064181151355903
+ Fehleranzahl: 639 von 8896705
+ Fehlerquote: 0.0071824343956555
  
  Lese sourcedata/wander/T2008.DBF.csv
 
- Fehleranzahl: 571 von 9088571
- Fehlerquote: 0.0062826158259643
+ Fehleranzahl: 639 von 9088583
+ Fehlerquote: 0.0070307989705326
  
  Lese sourcedata/wander/T2009.DBF.csv
 
- Fehleranzahl: 571 von 9277874
- Fehlerquote: 0.006154427188815
+ Fehleranzahl: 639 von 9277886
+ Fehlerquote: 0.0068873448110917
  
  Lese sourcedata/wander/T2010.DBF.csv
 
- Fehleranzahl: 571 von 9467446
- Fehlerquote: 0.0060311936292005
+ Fehleranzahl: 639 von 9467458
+ Fehlerquote: 0.0067494358042043
  
  Lese sourcedata/wander/T2011.DBF.csv
 
- Fehleranzahl: 571 von 9665568
- Fehlerquote: 0.0059075679773812
+ Fehleranzahl: 639 von 9665580
+ Fehlerquote: 0.0066110880050654
  
  Lese sourcedata/wander/b2000.DBF.csv
 
- Fehleranzahl: 571 von 9883603
- Fehlerquote: 0.005777245403321
+ Fehleranzahl: 639 von 9883615
+ Fehlerquote: 0.0064652457628105
  
  Lese sourcedata/wander/b2001.DBF.csv
 
- Fehleranzahl: 571 von 10091596
- Fehlerquote: 0.0056581733949714
+ Fehleranzahl: 639 von 10091608
+ Fehlerquote: 0.0063319938705507
  
  Lese sourcedata/wander/b2002.DBF.csv
 
- Fehleranzahl: 571 von 10289126
- Fehlerquote: 0.0055495481346035
+ Fehleranzahl: 639 von 10289138
+ Fehlerquote: 0.0062104327884416
  
  Lese sourcedata/wander/b2003.DBF.csv
 
- Fehleranzahl: 571 von 10461456
- Fehlerquote: 0.0054581312582111
+ Fehleranzahl: 639 von 10461468
+ Fehlerquote: 0.006108129375342
  
  Lese sourcedata/wander/b2004.DBF.csv
 
- Fehler-Nr.: 1| Zeile:35026 hat falschen Wert in Feld Anzahl: 0
- Fehler-Nr.: 2| Zeile:35617 hat falschen Wert in Feld Anzahl: 0
- Fehler-Nr.: 3| Zeile:43557 hat falschen Wert in Feld Anzahl: 0
- Fehleranzahl: 574 von 10701140
- Fehlerquote: 0.0053639144988291
+ Fehler-Nr.: 1| Zeile:19814 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 2| Zeile:19814 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 3| Zeile:19814 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 4| Zeile:19814 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 5| Zeile:19815 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 6| Zeile:19815 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 7| Zeile:19815 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 8| Zeile:19815 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 9| Zeile:19815 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 10| Zeile:19815 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 11| Zeile:19815 hat falschen Nation-Wert: 
+ Fehler-Nr.: 12| Zeile:35028 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 13| Zeile:35619 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 14| Zeile:43559 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 15| Zeile:44696 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 16| Zeile:44696 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 17| Zeile:44696 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 18| Zeile:44696 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 19| Zeile:44697 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 20| Zeile:44697 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 21| Zeile:44697 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 22| Zeile:44697 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 23| Zeile:44697 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 24| Zeile:44697 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 25| Zeile:44697 hat falschen Nation-Wert: 
+ Fehler-Nr.: 26| Zeile:100601 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 27| Zeile:100601 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 28| Zeile:100601 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 29| Zeile:100601 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 30| Zeile:100602 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 31| Zeile:100602 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 32| Zeile:100602 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 33| Zeile:100602 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 34| Zeile:100602 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 35| Zeile:100602 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 36| Zeile:100602 hat falschen Nation-Wert: 
+ Fehler-Nr.: 37| Zeile:152969 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 38| Zeile:152969 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 39| Zeile:152969 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 40| Zeile:152969 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 41| Zeile:152969 hat falschen Nation-Wert: 
+ Fehler-Nr.: 42| Zeile:152970 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 43| Zeile:152970 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 44| Zeile:152970 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 45| Zeile:152970 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 46| Zeile:152970 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 47| Zeile:152970 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 48| Zeile:152970 hat falschen Nation-Wert: 
+ Fehler-Nr.: 49| Zeile:191072 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 50| Zeile:191072 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 51| Zeile:191072 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 52| Zeile:191072 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 53| Zeile:191073 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 54| Zeile:191073 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 55| Zeile:191073 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 56| Zeile:191073 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 57| Zeile:191073 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 58| Zeile:191073 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 59| Zeile:191073 hat falschen Nation-Wert: 
+ Fehler-Nr.: 60| Zeile:222354 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 61| Zeile:222354 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 62| Zeile:222354 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 63| Zeile:222354 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 64| Zeile:222355 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 65| Zeile:222355 hat falschen AGS-Wert: 0
+ Fehler-Nr.: 66| Zeile:222355 hat falschen AGS-2-Wert: 
+ Fehler-Nr.: 67| Zeile:222355 hat falschen Wert in Feld Geschlecht: 0
+ Fehler-Nr.: 68| Zeile:222355 hat falschen Wert in Feld Anzahl: 0
+ Fehler-Nr.: 69| Zeile:222355 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 70| Zeile:222355 hat falschen Nation-Wert: 
+ Fehleranzahl: 709 von 10701164
+ Fehlerquote: 0.0066254474746859
  
  Lese sourcedata/wander/b2005.DBF.csv
 
- Fehleranzahl: 574 von 10866559
- Fehlerquote: 0.0052822609254687
+ Fehleranzahl: 709 von 10866583
+ Fehlerquote: 0.0065245901126417
  
  Lese sourcedata/wander/m2000.DBF.csv
 
- Fehleranzahl: 574 von 11079716
- Fehlerquote: 0.0051806382040839
+ Fehleranzahl: 709 von 11079740
+ Fehlerquote: 0.0063990671261239
  
  Lese sourcedata/wander/m2001.DBF.csv
 
- Fehleranzahl: 574 von 11293983
- Fehlerquote: 0.005082352257835
+ Fehleranzahl: 709 von 11294007
+ Fehlerquote: 0.0062776656681725
  
  Lese sourcedata/wander/m2002.DBF.csv
 
- Fehleranzahl: 574 von 11500627
- Fehlerquote: 0.004991032228069
+ Fehleranzahl: 709 von 11500651
+ Fehlerquote: 0.006164868406145
  
  Lese sourcedata/wander/m2003.DBF.csv
 
- Fehleranzahl: 574 von 11699366
- Fehlerquote: 0.0049062487659588
+ Fehleranzahl: 709 von 11699390
+ Fehlerquote: 0.0060601450161077
  
  Lese sourcedata/wander/m2004.DBF.csv
 
- Fehleranzahl: 574 von 11897317
- Fehlerquote: 0.0048246171804954
+ Fehleranzahl: 709 von 11897341
+ Fehlerquote: 0.0059593147746206
  
  Lese sourcedata/wander/m2005.DBF.csv
 
- Fehleranzahl: 574 von 12083252
- Fehlerquote: 0.0047503768025363
+ Fehleranzahl: 709 von 12083276
+ Fehlerquote: 0.0058676140477136
  
  Lese sourcedata/wander/t2000.DBF.csv
 
- Fehleranzahl: 574 von 12287980
- Fehlerquote: 0.0046712315612493
+ Fehleranzahl: 709 von 12288004
+ Fehlerquote: 0.0057698548926254
  
  Lese sourcedata/wander/t2001.DBF.csv
 
- Fehler-Nr.: 1| Zeile:60835 hat falschen Wert in Feld Altersgruppe: 0
- Fehler-Nr.: 2| Zeile:143182 hat falschen Wert in Feld Altersgruppe: 0
- Fehler-Nr.: 3| Zeile:188099 hat falschen Wert in Feld Altersgruppe: 0
- Fehleranzahl: 577 von 12494882
- Fehlerquote: 0.0046178907491883
+ Fehler-Nr.: 1| Zeile:15919 hat falschen AGS-2-Wert: 01428647
+ Fehler-Nr.: 2| Zeile:30892 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 3| Zeile:60835 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 4| Zeile:113239 hat falsche Datumsangabe: 0
+ Fehler-Nr.: 5| Zeile:143182 hat falschen Wert in Feld Altersgruppe: 0
+ Fehler-Nr.: 6| Zeile:188099 hat falschen Wert in Feld Altersgruppe: 0
+ Fehleranzahl: 715 von 12494906
+ Fehlerquote: 0.0057223319647223
  
  Lese sourcedata/wander/t2002.DBF.csv
 
- Fehleranzahl: 577 von 12698914
- Fehlerquote: 0.0045436956262559
+ Fehleranzahl: 715 von 12698938
+ Fehlerquote: 0.0056303920847554
  
  Lese sourcedata/wander/t2003.DBF.csv
 
- Fehleranzahl: 577 von 12902898
- Fehlerquote: 0.004471863607695
+ Fehleranzahl: 715 von 12902922
+ Fehlerquote: 0.0055413804718032
  
  Lese sourcedata/wander/t2004.DBF.csv
 
- Fehleranzahl: 577 von 13099938
- Fehlerquote: 0.004404600998875
+ Fehleranzahl: 715 von 13099962
+ Fehlerquote: 0.0054580310996322
  
  Lese sourcedata/wander/t2005.DBF.csv
 
- Fehleranzahl: 577 von 13289444
- Fehlerquote: 0.0043417918763193
+ Fehleranzahl: 715 von 13289468
+ Fehlerquote: 0.0053802003210362
