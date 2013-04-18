@@ -404,56 +404,8 @@ function getOrCreateDate( $date ) {
 	return $dateNodeID;
 }
 
+// Bearbeite nun Wanderungsdaten
+include('aufbereitung_wanderung.php');
 
-// =========================================================
-// Wanderungsdaten
-// =========================================================
-/*
-echo "\nVerarbeite Wanderungsdaten.\n";
-
-ini_set('auto_detect_line_endings',TRUE);
-
-$relations = array();
-
-$csvDateien = glob($sourceFolder."*.DBF.csv");
-foreach ($csvDateien as $dateiname) {
-	echo "\n  Lese ".$dateiname;
-	$csvFile = fopen( $dateiname,'r');
-	
-	$header = fgetcsv( $csvFile );
-	// Liest Zeile für Zeile aus der Datei aus
-	while (($line = fgetcsv($csvFile)) !== FALSE) {
-		//echo (count($line)." ".$line[0]." - ".$line[1]."\n");
-		$line[0] = $line[0].'1231';
-		if (substr($line[3],0,1) == '0') {
-			$line[3] = substr($line[3],1,8);
-		}else{
-			$line[3] = substr($line[3],0,3);
-		}	
-		if (substr($line[1],0,1) == '0') {
-			$line[1] = substr($line[1],1,8);
-		}else{
-			$line[1] = substr($line[1],0,3);
-		}	
-		// echo (count($line)." - ".$line[0]." -  ".$line[1]." - ".$line[3]."\n");
-
-		// Knoten-ID für AGS aus $spaceIDs suchen
-		
-		// Prüfen, ob für die AGS auch für dieses Jahr existiert?
-		
-		// Wanderungsdaten als Relationen speichern
-		//$relations[] = array($start, $end, $type, null, null, 0);
-	}
-	fclose($csvFile);
-}
-
-// Öffne Relations-Ausgabedatei erneut, jetzt aber zum anhängen
-
-$relFile = fopen($outputFolder.'rels.csv','a');
-foreach( $relations as $rel) {
-	fwrite( $relFile, "\n".implode("\t", $rel));
-}
-// Schließe Ausgabedatei
-fclose($relFile);
-*/
+echo( "\n\nEnde der Aufbereitung.\n);
 ?>
