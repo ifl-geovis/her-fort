@@ -45,6 +45,12 @@ $spaceIDs = array();
 // NodeIDs für Datum, array( "20121231"=>45 );
 $dateIDs = array();
 
+$geschlechtIDs = array();
+$familieIDs = array();
+$alterIDs = array();
+$wanderungIDs = array();
+$nationIDs = array();
+
 // Knoten und Relationen
 $nodes = array();
 $relations = array();
@@ -74,6 +80,14 @@ if (isset($neoClient)) {
 	}
 }
 
+// Schreibe Ausgabedatei-Header
+$nodeFile = fopen($outputFolder.'nodes.csv','w');
+fwrite( $nodeFile, implode("\t", $nodeProps));
+fclose($nodeFile);
+$relFile = fopen($outputFolder.'rels.csv','w');
+fwrite( $relFile, implode("\t", $relProps));
+fclose($relFile);
+
 // =========================================================
 // Gemeindedaten
 // =========================================================
@@ -83,10 +97,12 @@ foreach($dateiformate as $fileName=>$sheets) {
 	$xlsReader = PHPExcel_IOFactory::createReader('Excel5');
 	$xlsReader->setReadDataOnly(true);
 	//if (!$xlsReader->canRead($sourceFolder.$fileName)) die( "Datei $sourceFolder$fileName nicht lesbar. Excel 5 wird benötigt.");
-	
+
 	// Schleife durch Tabellen
 	foreach($sheets as $sheetName=>$sheetInfo) {
-		
+		// Knoten und Relationen
+		$nodes = array();
+		$relations = array();
 		
 		echo "\n  Lese $fileName > $sheetName... ";
 		$xlsReader->setLoadSheetsOnly($sheetName);
@@ -113,7 +129,6 @@ foreach($dateiformate as $fileName=>$sheets) {
 					$name=$sheet->getCellByColumnAndRow(3, $row)->getValue();
 					
 					$nodeID++;
-					$nodes[] = array($ags, $klasse, $name);
 					
 					// Bestimmte Node-IDs zur späteren Verwendung speichern
 					if ($name=="Fläche") {
@@ -123,8 +138,33 @@ foreach($dateiformate as $fileName=>$sheets) {
 					} else if ($ags=="DE") {
 						$spaceIDs['DE'] = $nodeID;
 					} else if ($name=="Datum") {
-						$dateIDs['node']= $nodeID;
+						$dateIDs['node'] = $nodeID;
 					}
+					
+					switch ($ags) {
+						case "Geschlecht":
+							$geschlechtIDs[$klasse] = $nodeID;
+							$ags = null;
+						break;
+						case "Familienstand":
+							$familieIDs[$klasse] = $nodeID;
+							$ags = null;
+						break;
+						case "Altersgruppe":
+							$alterIDs[$klasse] = $nodeID;
+							$ags = null;
+						break;
+						case "Wanderung":
+							$wanderungIDs[$klasse] = $nodeID;
+							$ags = null;
+						break;
+						case "Nation":
+							$nationIDs[$klasse] = $nodeID;
+							$ags = null;
+						break;
+					}
+					
+					$nodes[] = array($ags, $klasse, $name);
 					
 					$val = $sheet->getCellByColumnAndRow(0, ++$row)->getValue();
 				}
@@ -193,12 +233,17 @@ foreach($dateiformate as $fileName=>$sheets) {
 					$relations[] = array($kreisNodeID, $gemeindeNodeID, $relTypeAdmin, null, null, $sheetInfo[0]);
 					
 					// Relation zu Daten anlegen
+					/*
 					$relations[] = array($gemeindeNodeID, $flID,
 								$relTypeFl, $sheet->getCellByColumnAndRow(2, $row)->getValue(),
 								null, $sheetInfo[0]);
 					$relations[] = array($gemeindeNodeID, $bevID,
 								$relTypeBev, $sheet->getCellByColumnAndRow(3, $row)->getValue(),
 								null, $sheetInfo[0]);
+					*/
+					storeFlaeche($gemeindeNodeID, $sheetInfo[0], $sheet->getCellByColumnAndRow(2, $row)->getValue());
+					storeBev($gemeindeNodeID, $sheetInfo[0], "1", $sheet->getCellByColumnAndRow(4, $row)->getValue());
+					storeBev($gemeindeNodeID, $sheetInfo[0], "2", $sheet->getCellByColumnAndRow(5, $row)->getValue());
 					
 					$val = $sheet->getCellByColumnAndRow(0, ++$row)->getValue();
 				}
@@ -251,12 +296,17 @@ foreach($dateiformate as $fileName=>$sheets) {
 								$relations[] = array($kreisNodeID, $gemeindeNodeID, $relTypeAdmin, null, null, $sheetInfo[0]);
 								
 								// Relation zu Daten anlegen
+								/*
 								$relations[] = array($gemeindeNodeID, $flID,
 											$relTypeFl, $sheet->getCellByColumnAndRow(8, $row)->getValue(),
 											null, $sheetInfo[0]);
 								$relations[] = array($gemeindeNodeID, $bevID,
 											$relTypeBev, $sheet->getCellByColumnAndRow(9, $row)->getValue(),
 											null, $sheetInfo[0]);
+								*/
+								storeFlaeche($gemeindeNodeID, $sheetInfo[0], $sheet->getCellByColumnAndRow(8, $row)->getValue());
+								storeBev($gemeindeNodeID, $sheetInfo[0], "1", $sheet->getCellByColumnAndRow(10, $row)->getValue());
+								storeBev($gemeindeNodeID, $sheetInfo[0], "2", $sheet->getCellByColumnAndRow(11, $row)->getValue());
 							}
 							$emptyCount = 0;
 						break;
@@ -322,37 +372,36 @@ foreach($dateiformate as $fileName=>$sheets) {
 		$xls->disconnectWorksheets();
 		unset( $sheet );
 		unset( $xls );
+		
+		// Schreibe Nodes und Relations
+		$nodeFile = fopen($outputFolder.'nodes.csv','a');
+		foreach( $nodes as $node) {
+			fwrite( $nodeFile, "\n".implode("\t", $node));
+		}
+		// Schließe Ausgabedateien
+		fclose($nodeFile);
+
+
+		// Öffne Ausgabedatei
+		$relFile = fopen($outputFolder.'rels.csv','a');
+		foreach( $relations as $rel) {
+			fwrite( $relFile, "\n".implode("\t", $rel));
+		}
+		// Schließe Ausgabedatei
+		fclose($relFile);
+
+		// Arbeitsspeicher aufräumen
+		unset($nodes);
+		unset($relations);
+
 		echo "OK.";
 	}
 	unset( $xlsReader );
+	
+	
 }
 
-// Auch wenn wir im gleichen Rutsch noch die Wanderungen importieren wollen
-// werden wir erst Mal die Gemeinden rausschreiben um wieder Arbeitsspeicher
-// frei zu haben.
 
-// Öffne Ausgabedatei
-$nodeFile = fopen($outputFolder.'nodes.csv','w');
-fwrite( $nodeFile, implode("\t", $nodeProps));
-foreach( $nodes as $node) {
-	fwrite( $nodeFile, "\n".implode("\t", $node));
-}
-// Schließe Ausgabedateien
-fclose($nodeFile);
-
-
-// Öffne Ausgabedatei
-$relFile = fopen($outputFolder.'rels.csv','w');
-fwrite( $relFile, implode("\t", $relProps));
-foreach( $relations as $rel) {
-	fwrite( $relFile, "\n".implode("\t", $rel));
-}
-// Schließe Ausgabedatei
-fclose($relFile);
-
-// Arbeitsspeicher aufräumen
-unset($nodes);
-unset($relations);
 
 
 // returns Node-ID for Land
@@ -404,8 +453,44 @@ function getOrCreateDate( $date ) {
 	return $dateNodeID;
 }
 
-// Bearbeite nun Wanderungsdaten
-include('aufbereitung_wanderung.php');
+function storeFlaeche($spaceNodeID, $date, $flaeche) {
+	global $nodeID, $dateIDs, $nodes, $relations, $flID;
+	$dateNodeID = getOrCreateDate($date);
+	
+	// Merkmal-Node erzeugen
+	$nodeID++;
+	$nodes[] = array(null, null, "M");
+	$merkmalNodeID = $nodeID;
+	
+	// Indikator-Relation anlegen
+	$relations[] = array( $flID, $merkmalNodeID, "MERKMAL", null, null, 0 );
+	// Date-Relation anlegen
+	$relations[] = array( $merkmalNodeID, $dateNodeID, "MERKMALSWERT", null, null, 0 );
+	// Space-Relation mit Wert anlegen
+	$relations[] = array( $merkmalNodeID, $spaceNodeID, "WERT", $flaeche, null, 0 );
+}
 
-echo( "\n\nEnde der Aufbereitung.\n);
+function storeBev($spaceNodeID, $date, $geschl_klasse, $geschl_wert) {
+	global $nodeID, $dateIDs, $nodes, $relations, $geschlechtIDs, $bevID;
+	$dateNodeID = getOrCreateDate($date);
+	
+	// Merkmal-Node erzeugen
+	$nodeID++;
+	$nodes[] = array(null, null, "M");
+	$merkmalNodeID = $nodeID;
+	
+	// Indikator-Relation anlegen
+	$relations[] = array( $bevID, $merkmalNodeID, "MERKMAL", null, null, 0 );
+	// Date-Relation anlegen
+	$relations[] = array( $merkmalNodeID, $dateNodeID, "MERKMALSWERT", null, null, 0 );
+	// Geschlecht-Relation anlegen
+	$relations[] = array( $merkmalNodeID, $geschlechtIDs[$geschl_klasse], "MERKMALSWERT", null, null, 0 );
+	// Space-Relation mit Wert anlegen
+	$relations[] = array( $merkmalNodeID, $spaceNodeID, "WERT", $geschl_wert, null, 0 );
+}
+
+// Bearbeite nun Wanderungsdaten
+//include('aufbereitung_wanderung.php');
+
+echo( "\n\nEnde der Aufbereitung.\n");
 ?>
