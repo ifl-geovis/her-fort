@@ -12,6 +12,8 @@ Wanderungsdaten Herfert:
 //TODO: Überprüfen, ob alle Dateien fehlerfrei konvertiert werden.
 
 Datentest der Ausgangsdaten Herfert:
+datentest.bat
+Jede Spalte in jeder Zeile in jeder Wanderungsdaten-CSV wird auf unplausible Werte untersucht.
 
 Datenfehler vor Bereinigung:
 Gesamt: 	715
@@ -90,4 +92,17 @@ AG:			3
 Anzahl:		3
 Art:		0	
 
-TODO: Überprüfen, ob Doppelungen in den Wanderungsdaten vorhanden sind.
+Fehlerquote: 	0.0043417918763193
+Zeit: 			180.02023911476s 
+
+Fehlerquote: 	0.0043417918763193
+Zeit: 			150.54928302765s 
+
+//TODO: Überprüfen, ob Doppelungen in den Wanderungsdaten vorhanden sind.
+
+Gefunden wurden 3609170 doppelte Kombinationen, verteilt auf 12182 AGS2-Werte
+	Der Grund sind personengenaue Wanderungsdarstellungen in den Ausgangsdaten.
+	
+TODO: Überprüfen, ob Wanderungen innerhalb eines Bundeslandes von beiden Richtungen aufgenommen wurden,
+was zu einer doppelten Anzahl der Wanderungen führen würde. Vergleich der errechneten Gesamtanzahl mit 
+den Daten der statistischen Ämter.

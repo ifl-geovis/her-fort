@@ -873,4 +873,4 @@ Ueberpruefe Wanderungsdaten.
  Lese sourcedata/wander/t2005.DBF.csv
 
  Fehleranzahl: 577 von 13289444
- Fehlerquote: 0.0043417918763193
+ Fehlerquote: 0.0043417918763193Zeit: 150.54928302765s 
